@@ -381,7 +381,7 @@
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="menu-icon mdi mdi-floor-plan"></i>
-              <span class="menu-title">utilisateur</span>
+              <span class="menu-title">promotions</span>
               <i class="menu-arrow"></i> 
             </a>
             <div class="collapse" id="ui-basic">
@@ -395,39 +395,16 @@
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
               <i class="menu-icon mdi mdi-card-text-outline"></i>
-              <span class="menu-title">étudiants</span>
+              <span class="menu-title">modules</span>
               
             </a>
             <div class="collapse" id="form-elements">
   
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="resources/views/admin/promotion.blade.php" aria-expanded="false" aria-controls="charts">
-              <i class="menu-icon mdi mdi-chart-line"></i>
-              <span class="menu-title">promotion</span>
-              
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
-              <i class="menu-icon mdi mdi-table"></i>
-              <span class="menu-title">options</span>
-             
-            </a>
-            <div class="collapse" id="tables">
-              
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
-              <i class="menu-icon mdi mdi-layers-outline"></i>
-              <span class="menu-title">modules</span>
-              
-            </a>
-            <div class="collapse" id="icons">
-              
-            </div>
-          </li>
+          
+         
+         
           <li class="nav-item nav-category">pages</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">

@@ -14,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    
+    return view('admin.masterdetailP');
+});
+Route::get('/admin', function () {
+    
+    return view('promotion');
+});
+Route::get('/', function () {
+    
     return view('admin.module');
 });
 

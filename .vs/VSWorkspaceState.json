@@ -1,13 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\bootstrap",
     "\\resources",
     "\\resources\\views",
     "\\resources\\views\\admin",
-    "\\resources\\views\\layouts",
-    "\\resources\\views\\pages",
-    "\\resources\\views\\pages\\tables"
+    "\\resources\\views\\pages"
   ],
-  "SelectedNode": "\\resources\\views\\admin\\acceuil.blade.php",
+  "SelectedNode": "\\resources\\views\\admin\\module.blade.php",
   "PreviewInSolutionExplorer": false
 }
