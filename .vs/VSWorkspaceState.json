@@ -1,12 +1,17 @@
 {
   "ExpandedNodes": [
     "",
-    "\\bootstrap",
+    "\\app",
+    "\\app\\Http",
+    "\\app\\Http\\Controllers",
     "\\resources",
     "\\resources\\views",
     "\\resources\\views\\admin",
-    "\\resources\\views\\pages"
+    "\\resources\\views\\enseignant",
+    "\\resources\\views\\pages",
+    "\\resources\\views\\pages\\forms",
+    "\\routes"
   ],
-  "SelectedNode": "\\resources\\views\\admin\\module.blade.php",
+  "SelectedNode": "\\resources\\views\\pages\\forms\\basic_elements.html",
   "PreviewInSolutionExplorer": false
 }

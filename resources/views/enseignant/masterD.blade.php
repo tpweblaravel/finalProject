@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.master2')
 
 @section('content')
  <!DOCTYPE html>
@@ -33,7 +33,7 @@
            <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Listes des étudiants</h4>
+                  <h4 class="card-title"></h4>
                   
                   
                   <div class="table-responsive pt-3">
@@ -44,19 +44,16 @@
                             #
                           </th>
                           <th>
-                            Numéro
-                          </th>
-                          <th>
                             Nom
                           </th>
                           <th>
                             Prénom
                           </th>
                           <th>
-                            Date de naissance 
+                            note
                           </th>
                            <th>
-                            
+                            <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
                           </th>
                         </tr>
                       </thead>
@@ -74,13 +71,12 @@
                           <td>
                             
                           </td>
+                         
                           <td>
-                            May 15, 2015
-                          </td>
-                          <td>
-                            <a type="button"  href="master-detailsreleve"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
+                          <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          Edit
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
                           </td>
                         </tr>
                         <tr>
@@ -96,13 +92,12 @@
                           <td>
                             
                           </td>
+                          
                           <td>
-                            July 1, 2015
-                          </td>
-                          <td>
-                            <a type="button"  href="master-detailsreleve"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
+                          <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          Edit
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
                           </td>
                         </tr>
                         <tr>
@@ -118,13 +113,12 @@
                           <td>
                             
                           </td>
+                         
                           <td>
-                            Apr 12, 2015
-                          </td>
-                          <td>
-                            <a type="button"  href="master-detailsreleve"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
+                           <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          Edit
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
                           </td>
                         </tr>
                         <tr>
@@ -137,16 +131,14 @@
                           <td>
                            
                           </td>
-                          <td>
-                            
+                        <td>
+                           
                           </td>
                           <td>
-                            May 15, 2015
-                          </td>
-                          <td>
-                            <a type="button"  href="master-detailsreleve"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
+                            <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          Edit
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
                           </td>
                         </tr>
                         <tr>
@@ -162,13 +154,12 @@
                           <td>
                             
                           </td>
+                         
                           <td>
-                            May 03, 2015
-                          </td>
-                          <td>
-                            <a type="button"  href="master-detailsreleve"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
+                          <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          Edit
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
                           </td>
                         </tr>
                         <tr>
@@ -184,13 +175,12 @@
                           <td>
                             
                           </td>
+                         
                           <td>
-                            April 05, 2015
-                          </td>
-                          <td>
-                            <a type="button"  href="master-detailsreleve"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
+                           <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          Edit
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
                           </td>
                         </tr>
                         <tr>
@@ -206,13 +196,13 @@
                           <td>
                             
                           </td>
+                         
                           <td>
-                            June 16, 2015
-                          </td>
-                          <td>
-                            <a type="button"  href="master-detailsreleve"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
+                          <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          Edit
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                        
                           </td>
                         </tr>
                       </tbody>

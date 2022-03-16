@@ -25,6 +25,9 @@
   <link rel="shortcut icon" href="../../images/favicon.png" />
 </head>
 <body>
+ 
+    <!-- partial:../../partials/_navbar.html -->
+   
  <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
@@ -32,9 +35,8 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title"></h4>
-                  
-                  
-                  </p>
+                
+  
                   <div class="table-responsive">
                     <table class="table">
                       <thead>
@@ -46,9 +48,9 @@
                       <tbody>
                         <tr>
                           <td>1er année L1</td>
-                          <td><button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                          <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
-                      </button>
+                      </a>
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
@@ -60,9 +62,9 @@
                         </tr>
                         <tr>
                           <td>2eme année L2</td>
-                          <td><button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                            <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
-                      </button>
+                      </a>
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
@@ -74,9 +76,10 @@
                         </tr>
                         <tr>
                           <td>3eme année L3</td>
-                          <td><button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                          <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
-                      </button>
+                       
+                      </a>
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
@@ -87,9 +90,9 @@
                         </tr>
                         <tr>
                           <td>master 1 GL</td>
-                          <td><button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                            <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
-                      </button>
+                      </a>
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
@@ -100,9 +103,9 @@
                         </tr>
                         <tr>
                           <td>master 1 SIC</td>
-                          <td><button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                            <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
-                      </button>
+                      </a>
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
@@ -113,9 +116,10 @@
                         </tr>
                         <tr>
                           <td>master 1 MID</td>
-                          <td><button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                            <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
+                        
                         <i class="ti-eye"></i>
-                      </button>
+                      </a>
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
@@ -127,9 +131,9 @@
                         </tr>
                         <tr>
                           <td>master 1 RSD</td>
-                          <td><button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                           <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
-                      </button>
+                      </a>
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
@@ -141,9 +145,9 @@
                         </tr>
                         <tr>
                           <td>master 2 GL</td>
-                          <td><button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                           <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
-                      </button>
+                      </a>
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
@@ -155,9 +159,9 @@
                         </tr>
                         <tr>
                           <td>master 2 MID</td>
-                          <td><button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                            <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
-                      </button>
+                      </a>
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
@@ -169,9 +173,9 @@
                         </tr>
                         <tr>
                           <td>master 2 SIC</td>
-                          <td><button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                            <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
-                      </button>
+                      </a>
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
@@ -184,17 +188,16 @@
                         </tr>
                         <tr>
                           <td>master 2 RSD</td>
-                          <td>
-                          <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
-                          <i class="ti-eye"></i>
-                          </button>
-                          <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
-                          <i class="ti-trash"></i>
-                          </button>
-                          <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
+                        <i class="ti-eye"></i>
+                      </a>
+                       <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                        <i class="ti-trash"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           Edit
                           <i class="ti-file btn-icon-append"></i>                          
-                          </button></td>
+                        </button></td>
                         </tr>
 
                       </tbody>
@@ -203,6 +206,7 @@
                 </div>
               </div>
             </div>
+            
   <script src="../../vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->

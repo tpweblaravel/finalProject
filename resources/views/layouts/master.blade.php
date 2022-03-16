@@ -403,23 +403,22 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="resources/views/admin/promotion.blade.php" aria-expanded="false" aria-controls="charts">
+            <a class="nav-link"  href="/promotion" >
               <i class="menu-icon mdi mdi-chart-line"></i>
               <span class="menu-title">promotion</span>
+              </a>
               
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+            <a class="nav-link"  href="">
               <i class="menu-icon mdi mdi-table"></i>
               <span class="menu-title">options</span>
              
             </a>
-            <div class="collapse" id="tables">
-              
-            </div>
+            
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+            <a class="nav-link" href="/module" >
               <i class="menu-icon mdi mdi-layers-outline"></i>
               <span class="menu-title">modules</span>
               
