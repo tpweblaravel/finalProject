@@ -46,5 +46,16 @@ Route::get('masterD', function () {
     return view('enseignant.masterD'); /*normalement haka
     code ta3 3ayn ok sber werili la view khssk fyn kyn 3yn*/
 });
-
+Route::get('masterDR', function () {
+    return view('enseignant.masterDR'); /*normalement haka
+    code ta3 3ayn ok sber werili la view khssk fyn kyn 3yn*/
+});
+Route::get('options', function () {
+    return view('option'); /*normalement haka
+    code ta3 3ayn ok sber werili la view khssk fyn kyn 3yn*/
+});
+Route::get('etudiants', function () {
+    return view('etudiant'); /*normalement haka
+    code ta3 3ayn ok sber werili la view khssk fyn kyn 3yn*/
+});
 

@@ -1,5 +1,4 @@
 @extends('layouts.master2')
-
 @section('content')
  <!DOCTYPE html>
 <html lang="en">
@@ -26,44 +25,35 @@
 </head>
 <body>
 
-  <div class="main-panel">
-        <div class="content-wrapper">
-          <div class="row">
+ 
+    <!-- partial:../../partials/_navbar.html -->
     
-           <div class="col-lg-12 grid-margin stretch-card">
+    <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Listes des étudiants</h4>
-                  
-                  
+                  <h4 class="card-title">Relevé</h4>
                   <div class="table-responsive pt-3">
                     <table class="table table-bordered">
                       <thead>
                         <tr>
                           <th>
-                            #
-                          </th>
+                           #
+                         </th>
                           <th>
                             Numéro
                           </th>
                           <th>
                             Nom
                           </th>
-                          <th>
-                            Prénom
-                          </th>
-                          <th>
-                            Date de naissance 
-                          </th>
-                           <th>
-                            
-                          </th>
-                        </tr>
+                         
+                          </tr>
+                           
+                        
                       </thead>
                       <tbody>
                         <tr>
                           <td>
-                            1
+                          
                           </td>
                           <td>
                           
@@ -73,14 +63,6 @@
                           </td>
                           <td>
                             
-                          </td>
-                          <td>
-                            May 15, 2015
-                          </td>
-                          <td>
-                            <a type="button"  href="masterDR"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
                           </td>
                         </tr>
                         <tr>
@@ -99,11 +81,6 @@
                           <td>
                             July 1, 2015
                           </td>
-                          <td>
-                            <a type="button"  href="masterDR"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
-                          </td>
                         </tr>
                         <tr>
                           <td>
@@ -120,11 +97,6 @@
                           </td>
                           <td>
                             Apr 12, 2015
-                          </td>
-                          <td>
-                            <a type="button"  href="masterDR"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
                           </td>
                         </tr>
                         <tr>
@@ -143,11 +115,6 @@
                           <td>
                             May 15, 2015
                           </td>
-                          <td>
-                            <a type="button"  href="masterDR"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
-                          </td>
                         </tr>
                         <tr>
                           <td>
@@ -164,11 +131,6 @@
                           </td>
                           <td>
                             May 03, 2015
-                          </td>
-                          <td>
-                            <a type="button"  href="masterDR"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
                           </td>
                         </tr>
                         <tr>
@@ -187,11 +149,6 @@
                           <td>
                             April 05, 2015
                           </td>
-                          <td>
-                            <a type="button"  href="masterDR"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
-                          </td>
                         </tr>
                         <tr>
                           <td>
@@ -209,11 +166,6 @@
                           <td>
                             June 16, 2015
                           </td>
-                          <td>
-                            <a type="button"  href="masterDR"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
-                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -221,10 +173,7 @@
                 </div>
               </div>
             </div>
-            </div>
-              </div>
-            </div>
-            </div>
+           
             
             
   <script src="../../vendors/js/vendor.bundle.base.js"></script>
@@ -242,3 +191,5 @@
   </html>
 
 @endsection
+
+

@@ -393,7 +393,7 @@
           </li>
           <li class="nav-item nav-category"></li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+            <a class="nav-link"  href="/etudiants" >
               <i class="menu-icon mdi mdi-card-text-outline"></i>
               <span class="menu-title">étudiants</span>
               
@@ -410,7 +410,7 @@
               
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href="">
+            <a class="nav-link"  href="/options">
               <i class="menu-icon mdi mdi-table"></i>
               <span class="menu-title">options</span>
              

@@ -28,8 +28,7 @@
  <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
-            <div class="col-lg-6 grid-margin stretch-card">
-              <div class="card">
+           
                 <div class="card-body">
                   <h4 class="card-title">liste des modules</h4>
                   
@@ -44,56 +43,69 @@
                       <tbody>
                         <tr>
                           <td>base de donnée</td>
-                          <td><button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </button>
+                           <td>
+                      
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
                       <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          Edit
+                          saisir
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          modifier
                           <i class="ti-file btn-icon-append"></i>                          
                         </button>
                       </td>
+                      
                         </tr>
                           <tr>
                           <td>base de donnée</td>
-                          <td><button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </button>
+                           <td>
+                      
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
                       <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          Edit
+                          saisir
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          modifier
                           <i class="ti-file btn-icon-append"></i>                          
                         </button>
                       </td>
                         </tr>
                           <tr>
                           <td>algebre</td>
-                          <td><button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </button>
+                           <td>
+                      
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
                       <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          Edit
+                          saisir
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          modifier
                           <i class="ti-file btn-icon-append"></i>                          
                         </button>
                       </td>
                         </tr>
                           <tr>
                           <td>analyse</td>
-                          <td><button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </button>
+                           <td>
+                      
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
                       <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          Edit
+                          saisir
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          modifier
                           <i class="ti-file btn-icon-append"></i>                          
                         </button>
                       </td>

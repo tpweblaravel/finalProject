@@ -1,4 +1,4 @@
-@extends('layouts.master2')
+@extends('layouts.master')
 
 @section('content')
  <!DOCTYPE html>
@@ -30,8 +30,7 @@
         <div class="content-wrapper">
           <div class="row">
     
-           <div class="col-lg-12 grid-margin stretch-card">
-              <div class="card">
+           
                 <div class="card-body">
                   <h4 class="card-title">Listes des étudiants</h4>
                   
@@ -40,17 +39,20 @@
                     <table class="table table-bordered">
                       <thead>
                         <tr>
-                          <th>
-                            #
-                          </th>
-                          <th>
-                            Numéro
+                        <th>
+                            photo
                           </th>
                           <th>
                             Nom
                           </th>
                           <th>
                             Prénom
+                          </th>
+                          <th>
+                           Date de naissance
+                          </th>
+                          <th>
+                            photo
                           </th>
                           <th>
                             Date de naissance 
@@ -63,7 +65,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            1
+                            
                           </td>
                           <td>
                           
@@ -74,14 +76,31 @@
                           <td>
                             
                           </td>
+                           <td>
+                            
+                          </td>
                           <td>
                             May 15, 2015
                           </td>
+
                           <td>
-                            <a type="button"  href="masterDR"class="btn btn-inverse-primary btn-rounded btn-icon">
+                         <a type="button"  href=""class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>
-                          </td>
+                      
+                       <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                        <i class="ti-trash"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          saisir
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          modifier
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                      </td>
+                          
                         </tr>
                         <tr>
                           <td>
@@ -96,14 +115,28 @@
                           <td>
                             
                           </td>
+                           <td>
+                            
+                          </td>
                           <td>
                             July 1, 2015
                           </td>
-                          <td>
-                            <a type="button"  href="masterDR"class="btn btn-inverse-primary btn-rounded btn-icon">
+                          <td> <a type="button"  href=""class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>
-                          </td>
+                      
+                       <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                        <i class="ti-trash"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          saisir
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          modifier
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                      </td>
                         </tr>
                         <tr>
                           <td>
@@ -118,14 +151,28 @@
                           <td>
                             
                           </td>
+                           <td>
+                            
+                          </td>
                           <td>
                             Apr 12, 2015
                           </td>
                           <td>
-                            <a type="button"  href="masterDR"class="btn btn-inverse-primary btn-rounded btn-icon">
+                       <a type="button"  href=""class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>
-                          </td>
+                       <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                        <i class="ti-trash"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          saisir
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          modifier
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                      </td>
                         </tr>
                         <tr>
                           <td>
@@ -140,14 +187,28 @@
                           <td>
                             
                           </td>
+                           <td>
+                            
+                          </td>
                           <td>
                             May 15, 2015
                           </td>
                           <td>
-                            <a type="button"  href="masterDR"class="btn btn-inverse-primary btn-rounded btn-icon">
+                       <a type="button"  href=""class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>
-                          </td>
+                       <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                        <i class="ti-trash"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          saisir
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          modifier
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                      </td>
                         </tr>
                         <tr>
                           <td>
@@ -162,14 +223,28 @@
                           <td>
                             
                           </td>
+                           <td>
+                            
+                          </td>
                           <td>
                             May 03, 2015
                           </td>
-                          <td>
-                            <a type="button"  href="masterDR"class="btn btn-inverse-primary btn-rounded btn-icon">
+                           <td>
+                       <a type="button"  href=""class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>
-                          </td>
+                       <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                        <i class="ti-trash"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          saisir
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          modifier
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                      </td>
                         </tr>
                         <tr>
                           <td>
@@ -184,14 +259,28 @@
                           <td>
                             
                           </td>
+                           <td>
+                            
+                          </td>
                           <td>
                             April 05, 2015
                           </td>
-                          <td>
-                            <a type="button"  href="masterDR"class="btn btn-inverse-primary btn-rounded btn-icon">
+                         <td>
+                       <a type="button"  href=""class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>
-                          </td>
+                       <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                        <i class="ti-trash"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          saisir
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          modifier
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                      </td>
                         </tr>
                         <tr>
                           <td>
@@ -206,14 +295,28 @@
                           <td>
                             
                           </td>
+                           <td>
+                            
+                          </td>
                           <td>
                             June 16, 2015
                           </td>
                           <td>
-                            <a type="button"  href="masterDR"class="btn btn-inverse-primary btn-rounded btn-icon">
+                       <a type="button"  href=""class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>
-                          </td>
+                       <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                        <i class="ti-trash"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          saisir
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                          modifier
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </button>
+                      </td>
                         </tr>
                       </tbody>
                     </table>

@@ -3,15 +3,13 @@
     "",
     "\\app",
     "\\app\\Http",
-    "\\app\\Http\\Controllers",
     "\\resources",
     "\\resources\\views",
     "\\resources\\views\\admin",
     "\\resources\\views\\enseignant",
-    "\\resources\\views\\pages",
-    "\\resources\\views\\pages\\forms",
+    "\\resources\\views\\pages\\tables",
     "\\routes"
   ],
-  "SelectedNode": "\\resources\\views\\pages\\forms\\basic_elements.html",
+  "SelectedNode": "\\resources\\views\\enseignant\\modules.blade.php",
   "PreviewInSolutionExplorer": false
 }
