@@ -27,6 +27,10 @@
 <body>
  
     <!-- partial:../../partials/_navbar.html -->
+    <!-- @foreach($etu as $etud)
+    {{$etud -> nom}}
+
+    @endforeach-->
    
  <div class="main-panel">
         <div class="content-wrapper">

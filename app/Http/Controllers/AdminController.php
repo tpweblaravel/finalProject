@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-
+use App\Models\Etudiant;
 class AdminController extends Controller
 {
   
@@ -14,6 +14,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('promotion');
+        $listEtudiant = Etudiant::all();
+        return view('promotion', ['etu' => $listEtudiant]);
     }
 }

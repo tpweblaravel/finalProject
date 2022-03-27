@@ -7,9 +7,8 @@
     "\\resources\\views",
     "\\resources\\views\\admin",
     "\\resources\\views\\enseignant",
-    "\\resources\\views\\pages\\tables",
     "\\routes"
   ],
-  "SelectedNode": "\\resources\\views\\enseignant\\modules.blade.php",
+  "SelectedNode": "\\.gitattributes",
   "PreviewInSolutionExplorer": false
 }

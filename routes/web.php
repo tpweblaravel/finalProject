@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layouts.master');
 });
-Route::get('promotion', function () {
+/*Route::get('promotion', function () {
     return view('promotion');
-});
+});*/
 Route::get('module', function () {
     return view('module');
 });
@@ -59,3 +59,4 @@ Route::get('etudiants', function () {
     code ta3 3ayn ok sber werili la view khssk fyn kyn 3yn*/
 });
 
+Route::get('promotion', 'App\Http\Controllers\AdminController@index');
