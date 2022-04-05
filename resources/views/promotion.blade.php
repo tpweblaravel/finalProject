@@ -41,13 +41,21 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Promotion</th>
-                          <th></th>
+                          <th>libelle</th>
+                          <th>niveau</th>
+                          <th>année</th>
+                          <th> <a type="button" href="addp" class="btn btn-outline-secondary btn-icon-text">
+                          ajouter
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </a></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>1er année L1</td>
+                          <td>1er année </td>
+                          <td>licence</td>
+                          <td>2019/2020</td>
+
                           <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>
@@ -62,6 +70,8 @@
                         </tr>
                         <tr>
                           <td>2eme année L2</td>
+                           <td>licence</td>
+                          <td>2019/2020</td>
                             <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>
@@ -76,6 +86,8 @@
                         </tr>
                         <tr>
                           <td>3eme année L3</td>
+                           <td>licence</td>
+                          <td>2019/2020</td>
                           <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                        
@@ -90,6 +102,8 @@
                         </tr>
                         <tr>
                           <td>master 1 GL</td>
+                           <td>master</td>
+                          <td>2019/2020</td>
                             <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>
@@ -103,6 +117,9 @@
                         </tr>
                         <tr>
                           <td>master 1 SIC</td>
+                           
+                           <td>master</td>
+                          <td>2019/2020</td>
                             <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>
@@ -116,6 +133,9 @@
                         </tr>
                         <tr>
                           <td>master 1 MID</td>
+                           
+                           <td>master</td>
+                          <td>2019/2020</td>
                             <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         
                         <i class="ti-eye"></i>
@@ -131,6 +151,8 @@
                         </tr>
                         <tr>
                           <td>master 1 RSD</td>
+                           <td>master</td>
+                          <td>2019/2020</td>
                            <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>
@@ -145,6 +167,8 @@
                         </tr>
                         <tr>
                           <td>master 2 GL</td>
+                           <td>master</td>
+                          <td>2019/2020</td>
                            <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>
@@ -159,6 +183,8 @@
                         </tr>
                         <tr>
                           <td>master 2 MID</td>
+                           <td>master</td>
+                          <td>2019/2020</td>
                             <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>
@@ -173,6 +199,8 @@
                         </tr>
                         <tr>
                           <td>master 2 SIC</td>
+                           <td>master</td>
+                          <td>2019/2020</td>
                             <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>
@@ -188,6 +216,8 @@
                         </tr>
                         <tr>
                           <td>master 2 RSD</td>
+                           <td>master</td>
+                          <td>2019/2020</td>
                           <td><a type="button"  href="master-details"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>

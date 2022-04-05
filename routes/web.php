@@ -58,4 +58,17 @@ Route::get('etudiants', function () {
     return view('etudiant'); /*normalement haka
     code ta3 3ayn ok sber werili la view khssk fyn kyn 3yn*/
 });
+Route::get('adde', function () {
+    return view('admin.addetudiant'); /*normalement haka
+    code ta3 3ayn ok sber werili la view khssk fyn kyn 3yn*/
+});
+Route::get('addp', function () {
+    return view('admin.addpromo'); /*normalement haka
+    code ta3 3ayn ok sber werili la view khssk fyn kyn 3yn*/
+});
+Route::get('addo', function () {
+    return view('admin.addoption'); /*normalement haka
+    code ta3 3ayn ok sber werili la view khssk fyn kyn 3yn*/
+});
+
 

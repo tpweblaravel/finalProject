@@ -51,14 +51,13 @@
                           <th>
                            Date de naissance
                           </th>
-                          <th>
-                            photo
-                          </th>
-                          <th>
-                            Date de naissance 
-                          </th>
                            <th>
-                            
+                      
+                           <a type="button" href="adde" class="btn btn-outline-secondary btn-icon-text">
+                          ajouter
+                          <i class=" btn-icon-append"></i>                          
+                       </a>
+                      
                           </th>
                         </tr>
                       </thead>
@@ -73,12 +72,7 @@
                           <td>
                             
                           </td>
-                          <td>
-                            
-                          </td>
-                           <td>
-                            
-                          </td>
+                          
                           <td>
                             May 15, 2015
                           </td>
@@ -88,13 +82,10 @@
                         <i class="ti-eye"></i>
                       </a>
                       
-                       <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
+                       <button type="button"  class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                      
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -112,12 +103,8 @@
                           <td>
                             
                           </td>
-                          <td>
-                            
-                          </td>
-                           <td>
-                            
-                          </td>
+                       
+                           
                           <td>
                             July 1, 2015
                           </td>
@@ -128,10 +115,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                      
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -148,12 +132,8 @@
                           <td>
                             
                           </td>
-                          <td>
-                            
-                          </td>
-                           <td>
-                            
-                          </td>
+                          
+                          
                           <td>
                             Apr 12, 2015
                           </td>
@@ -164,10 +144,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                     
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -184,12 +161,8 @@
                           <td>
                            
                           </td>
-                          <td>
-                            
-                          </td>
-                           <td>
-                            
-                          </td>
+                      
+                        
                           <td>
                             May 15, 2015
                           </td>
@@ -200,10 +173,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                      
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -220,12 +190,8 @@
                           <td>
                             
                           </td>
-                          <td>
-                            
-                          </td>
-                           <td>
-                            
-                          </td>
+                        
+                           
                           <td>
                             May 03, 2015
                           </td>
@@ -236,10 +202,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                      
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -256,12 +219,8 @@
                           <td>
                             
                           </td>
-                          <td>
-                            
-                          </td>
-                           <td>
-                            
-                          </td>
+                          
+                           
                           <td>
                             April 05, 2015
                           </td>
@@ -272,10 +231,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                    
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -292,12 +248,8 @@
                           <td>
                             
                           </td>
-                          <td>
-                            
-                          </td>
-                           <td>
-                            
-                          </td>
+                         
+                           
                           <td>
                             June 16, 2015
                           </td>
@@ -308,10 +260,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                    
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
