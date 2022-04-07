@@ -6,11 +6,10 @@
     "\\resources",
     "\\resources\\views",
     "\\resources\\views\\admin",
-    "\\resources\\views\\enseignant",
-    "\\resources\\views\\layouts",
-    "\\resources\\views\\pages\\tables",
+    "\\resources\\views\\pages",
+    "\\resources\\views\\pages\\forms",
     "\\routes"
   ],
-  "SelectedNode": "\\resources\\views\\etudiant.blade.php",
+  "SelectedNode": "\\resources\\views\\option.blade.php",
   "PreviewInSolutionExplorer": false
 }

@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layouts.master');
 });
-Route::get('promotion', function () {
+/*Route::get('promotion', function () {
     return view('promotion');
-});
+});*/
 Route::get('module', function () {
     return view('module');
 });
@@ -72,3 +72,4 @@ Route::get('addo', function () {
 });
 
 
+Route::get('promotion', 'App\Http\Controllers\AdminController@index');
