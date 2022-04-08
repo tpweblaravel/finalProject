@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layouts.master');
 });
-Route::get('promotion', function () {
+/*Route::get('promotion', function () {
     return view('promotion');
-});
+});*/
 Route::get('module', function () {
     return view('module');
 });
@@ -58,9 +58,27 @@ Route::get('etudiants', function () {
     return view('etudiant'); /*normalement haka
     code ta3 3ayn ok sber werili la view khssk fyn kyn 3yn*/
 });
+<<<<<<< HEAD
 Route::get('utilisateur', function () {
     return view('utilisateur'); 
 });
 Route::get('masterdec', function () {
     return view('admin.masterdec'); 
 });
+=======
+Route::get('adde', function () {
+    return view('admin.addetudiant'); /*normalement haka
+    code ta3 3ayn ok sber werili la view khssk fyn kyn 3yn*/
+});
+Route::get('addp', function () {
+    return view('admin.addpromo'); /*normalement haka
+    code ta3 3ayn ok sber werili la view khssk fyn kyn 3yn*/
+});
+Route::get('addo', function () {
+    return view('admin.addoption'); /*normalement haka
+    code ta3 3ayn ok sber werili la view khssk fyn kyn 3yn*/
+});
+
+
+Route::get('promotion', 'App\Http\Controllers\AdminController@index');
+>>>>>>> 35c64e8ca7a20783c77bf2ea3c66d4faa8a443c4

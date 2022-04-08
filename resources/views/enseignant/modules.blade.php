@@ -29,8 +29,6 @@
   <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
-    
-           
                 <div class="card-body">
                   <h4 class="card-title"></h4>
                   

@@ -27,9 +27,10 @@
 
  
     <!-- partial:../../partials/_navbar.html -->
-    
-    <div class="col-lg-12 grid-margin stretch-card">
-              <div class="card">
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+   
                 <div class="card-body">
                   <h4 class="card-title">Relevé</h4>
                   <div class="table-responsive pt-3">

@@ -43,7 +43,10 @@
                         <tr>
                           <th>libelle</th>
                           <th>niveau</th>
-                          <th></th>
+                          <th> <a type="button" href="addo" class="btn btn-outline-secondary btn-icon-text">
+                          ajouter
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </a></th>
                         </tr>
                       </thead>
                       <tbody>
@@ -55,10 +58,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                     
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -73,10 +73,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                      
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -92,10 +89,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                     
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -110,10 +104,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                     
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -128,10 +119,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                      
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -146,10 +134,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                     
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -165,10 +150,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                     
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -184,10 +166,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                    
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -203,10 +182,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                      
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -222,10 +198,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                     
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
@@ -242,10 +215,7 @@
                        <button type="button" class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
-                          saisir
-                          <i class="ti-file btn-icon-append"></i>                          
-                        </button>
+                    
                         <button type="button" class="btn btn-outline-secondary btn-icon-text">
                           modifier
                           <i class="ti-file btn-icon-append"></i>                          
