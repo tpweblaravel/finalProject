@@ -58,4 +58,9 @@ Route::get('etudiants', function () {
     return view('etudiant'); /*normalement haka
     code ta3 3ayn ok sber werili la view khssk fyn kyn 3yn*/
 });
-
+Route::get('utilisateur', function () {
+    return view('utilisateur'); 
+});
+Route::get('masterdec', function () {
+    return view('admin.masterdec'); 
+});
