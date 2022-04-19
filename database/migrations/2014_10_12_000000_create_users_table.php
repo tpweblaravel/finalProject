@@ -19,11 +19,14 @@ class CreateUsersTable extends Migration
             $table->string('prenom');
             $table->date('date_naissance');
             $table->string('photo');
+            $table->binary('is_admin');
             $table->string('grade')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+           // $table->foreign('mod')->unsigned();
+            //$table->foreign('mod')->references('id_module')->on('modules');
             $table->timestamps();
         });
     }

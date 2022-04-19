@@ -31,43 +31,18 @@
             <div class="col-md-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <form class="forms-sample">
+                    <form action="{{ url('options')}}" method="POST">
+                        {{ csrf_field()}}
                     <div class="form-group">
-                      <label for="exampleInputUsername1">nom</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="tadlaoui">
+                      <label for="exampleInputUsername1">libelle</label>
+                      <input type="text" name="libel" class="form-control" id="exampleInputUsername1" placeholder="premiere">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputUsername1">prenom</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="mohammed">
+                        <label for="exampleSelectGender">niveau</label>
+                        <input type="text" name="niveauu" class="form-control" id="exampleInputUsername1" placeholder="master/licence">
                     </div>
-                     <div class="form-group row">
-                          <label class="col-sm-5 col-form-label">Date de naissance</label>
-                          <div class="col-sm-7">
-                            <input class="form-control" placeholder="dd/mm/yyyy"/>
-                          </div>
-                       
-                    <div class="form-group">
-                      <label for="exampleSelectGender">Genre</label>
-                        <select class="form-control" id="exampleSelectGender">
-                          <option>Male</option>
-                          <option>Female</option>
-                        </select>
-                      </div>
-                 
-                           <div class="form-group">
-                      <label>photo</label>
-                      <input type="file" name="img[]" class="file-upload-default">
-                      <div class="input-group col-xs-12">
-                      
-                        <span class="input-group-append">
-                          <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-                        </span>
-                      </div>
-                      </div>
-                
-                    
-                    <button type="submit" class="btn btn-primary me-2">Submit</button>
-                    <button class="btn btn-light">Cancel</button>
+                    <button type="submit" class="btn btn-primary me-2">Enregistrer</button>
+                    <button class="btn btn-light">Supprimer</button>
                   </form>
                 </div>
               </div>

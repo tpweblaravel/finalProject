@@ -6,38 +6,25 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Etudiant extends Model
+class Promotion extends Model
 {
     use HasFactory;
     use SoftDeletes;
-   protected $table = 'etudiants';
+    protected $table = 'promotions';
     protected $primaryKey = 'id';
     //protected $dates= ['deleted_at'];
-     /**
+    /**
      * Get the user that owns the Promotion
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function promotion()
+    public function option()
     {
-        return $this->belongsTo(Promotion::class,'promo_id');
+        return $this->belongsTo(Option::class);
     }
-    /**
-
-     * The eyewears that belong to the EyewearsColor
-
-     *
-
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
-
-     */
-
-    public function modules()
-
-    {
-
-        return $this->belongsToMany(Module::class, 'notes');
-
-    }
-
+     public function etudiants()
+     {
+         return $this->hasMany(Etudiant::class);
+     }
+   
 }

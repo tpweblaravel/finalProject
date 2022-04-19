@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
+
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/feather/feather.css">
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
@@ -25,36 +25,46 @@
 </head>
 
 <body>
-<div class="main-panel">        
+<div class="main-panel">
+<div class="container">
         <div class="content-wrapper">
           <div class="row">
             <div class="col-md-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <form class="forms-sample">
+                  <form action="{{ url('promotions')}}" method="POST">
+                  	{{ csrf_field()}}
+
                     <div class="form-group">
                       <label for="exampleInputUsername1">libelle</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="premiere">
+                      <input type="text" name="libelle" class="form-control" id="exampleInputUsername1" placeholder="premiere">
                     </div>
                      <div class="form-group">
-                      <label for="exampleSelectGender">niveau</label>
-                        <select class="form-control" id="exampleSelectGender">
-                          <option>Master</option>
-                          <option>licence</option>
-                        </select>
+                      <label for="exampleSelectGender">option</label>
+                      <select name="option">
+
+                        @foreach($options as $option)
+                    
+                        <option value="{{$option->id}}"> {{$option->libelle}} </option>
+                    
+                        @endforeach
+                    
+                    </select>
                       </div>
                      <div class="form-group row">
                           <label class="col-sm-5 col-form-label">année</label>
                           <div class="col-sm-7">
-                            <input class="form-control" placeholder="yyyy/yyyy"/>
+                            <input name="annee" class="form-control" placeholder="yyyy/yyyy"/>
                           </div>
                      
-                    <button type="submit" class="btn btn-primary me-2">Submit</button>
-                    <button class="btn btn-light">Cancel</button>
+                    <button type="submit" class="btn btn-primary me-2">Enregistrer</button>
+                    <button class="btn btn-light">Supprimer</button>
                   </form>
                 </div>
               </div>
+             </div>
             </div>
+        </div>
 
 
 

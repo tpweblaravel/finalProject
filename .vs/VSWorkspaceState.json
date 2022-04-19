@@ -6,10 +6,9 @@
     "\\resources",
     "\\resources\\views",
     "\\resources\\views\\admin",
-    "\\resources\\views\\pages",
-    "\\resources\\views\\pages\\forms",
-    "\\routes"
+    "\\resources\\views\\admin\\promotions",
+    "\\resources\\views\\pages\\forms"
   ],
-  "SelectedNode": "\\resources\\views\\option.blade.php",
+  "SelectedNode": "\\.editorconfig",
   "PreviewInSolutionExplorer": false
 }

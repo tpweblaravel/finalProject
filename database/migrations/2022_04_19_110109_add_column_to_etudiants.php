@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateOptionTable extends Migration
+class AddColumnToEtudiants extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,8 @@ class CreateOptionTable extends Migration
      */
     public function up()
     {
-        Schema::create('Options', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::table('etudiants', function (Blueprint $table) {
+            $table->softDeletes();
         });
     }
 
@@ -26,6 +25,8 @@ class CreateOptionTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Options');
+        Schema::table('etudiants', function (Blueprint $table) {
+            $table->dropSoftDeletes();
+        });
     }
 }

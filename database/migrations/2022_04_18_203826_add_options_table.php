@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateNoteTable extends Migration
+class AddOptionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateNoteTable extends Migration
      */
     public function up()
     {
-        Schema::create('Notes', function (Blueprint $table) {
-            $table->string('module');
-            $table->string('nom_etudiant');
-            $table->number_format('note');
+        Schema::create('options', function (Blueprint $table) {
+            $table->id();
+            $table->string('libelle');
+            $table->string('niveau');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -28,6 +29,6 @@ class CreateNoteTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Notes');
+        Schema::dropIfExists('options');
     }
 }
