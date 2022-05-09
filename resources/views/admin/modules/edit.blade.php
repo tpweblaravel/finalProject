@@ -3,7 +3,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
+        <title>modifier module</title>
         <!-- plugins:css -->
         <link rel="stylesheet" href="../../vendors/feather/feather.css">
         <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
@@ -24,14 +24,13 @@
           <!-- partial:../../partials/_navbar.html -->
          
          
-       <div class="main-panel">
-              <div class="content-wrapper">
+     
                 <div class="row">
                  <!-- <div class="col-lg-6 grid-margin stretch-card">-->
                     
                       <div class="card-body">
                         <h4 class="card-title"></h4>
-                        <form action= "{{url('modules/'. $modu->id)}}" method="POST">
+                        <form action= "{{url('modules/'. $mod->id)}}" method="POST">
                           
                             <input type="hidden" name="_method" value="PUT">
                             {{ csrf_field()}}
@@ -40,11 +39,22 @@
                             
                             <tbody>
                             
-                                <tr><td>libelle</td><td><input type="text" name="libelle" value="{{$modu->libelle}}"></td></tr>
-                                <tr><td>option</td><td><input type="text" name="option" value="{{$modu->option}}"></td></tr>
-                                <tr><td>semestre</td><td><input type="text" name="semestre" value="{{$modu->semestre}}"></td></tr>
+                                <tr><td>libelle</td><td><input type="text" name="libelle" value="{{$mod->libelle}}"></td></tr>
+                                <tr><td>option</td><td> 
+                                  <select name="option">
+                                  @foreach($options as $option)
+                              
+                                  <option value="{{$option->id}}" @if($mod->option and $mod->option->id ) selected @endif> {{$option->libelle}} </option>
+                              
+                                  @endforeach
+                              
+                              </select> </td></tr>
+                                <tr><td>semestre</td><td><input type="text" name="semestre" value="{{$mod->semestre}}"></td></tr>
+                                <tr><td>examen</td><td><input type="text" name="examen" value="{{$mod->examen}}"></td></tr>
+                                <tr><td>controle</td><td><input type="text" name="controle" value="{{$mod->controle}}"></td></tr>
+                                <tr><td>tp</td><td><input type="text" name="tp" value="{{$mod->tp}}"></td></tr>
                            
-                              </tr>
+                              
                             </tbody>
                           </table>
                           <button type="submit" class="btn btn-primary me-2">Modifier</button>

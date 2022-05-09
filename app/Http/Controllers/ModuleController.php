@@ -29,7 +29,7 @@ class ModuleController extends Controller
         $module = new Module;
         $module->libelle=$request->input('libelle');
         $module->semestre=$request->input('semestre');
-        $module->option_id= $request->input('option');
+        $module->opt_id= $request->input('option');
         $module->controle=$request->input('controle');
         $module->examen=$request->input('examen');
         $module->tp=$request->input('tp');
@@ -38,8 +38,13 @@ class ModuleController extends Controller
     }
     //modifier une ligne
     public function edit($id){
+        $data = [
+
+            'options' => Option::all(),
+        
+            ];
     	$modu = Module::find($id);
-    	return view('admin.modules.edit', ['mod'=>$modu]);
+    	return view('admin.modules.edit', ['mod'=>$modu])->with($data);
     }
     public function update(Request $request, $id){
         $module =Module::find($id);

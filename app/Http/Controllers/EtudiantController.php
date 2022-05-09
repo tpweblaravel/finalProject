@@ -32,6 +32,7 @@ class EtudiantController extends Controller
         $etudiant->nom= $request->input('nom');
         $etudiant->prenom=$request->input('prenom');
         $etudiant->promo_id=$request->input('promotion');
+        $etudiant->date=  $request->input('date');
         $etudiant->date_naissance=  $request->input('date_de_naissance');
        
         $etudiant->save();
@@ -39,16 +40,23 @@ class EtudiantController extends Controller
     }
     //modifier une ligne
     public function edit($id){
+        $data = [
+
+            'promotions' => Promotion::all(),
+        
+            ];
     	$etu = Etudiant::find($id);
-    	return view('admin.etudiants.edit', ['etu'=>$etu]);
+    	return view('admin.etudiants.edit', ['etu'=>$etu])->with($data);
     }
     public function update(Request $request, $id){
-    	$etudiants = Etudiant::find($id);
-    	$etudiant->photos= $request->input('img[]');
-        $etudiant->nom= $request->input('nom');
-        $etudiant->prenom=  $request->input('prenom');
-        $etudiant->date=  $request->input('date_de_naissance');
-        //$etudiants->promo=  $request->input('promotion');
+    	$etudiant = Etudiant::find($id);
+        $etudiant->photo= $request->input('photo');
+       $etudiant->nom= $request->input('nom');
+        $etudiant->prenom=$request->input('prenom');
+        $etudiant->promo_id=$request->input('promotion');
+        $etudiant->date=  $request->input('date');
+        $etudiant->date_naissance=  $request->input('date_de_naissance');
+      
     	$etudiant->save();
     	return redirect('etudiants');    	
     }

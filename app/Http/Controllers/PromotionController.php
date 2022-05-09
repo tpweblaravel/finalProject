@@ -29,20 +29,25 @@ class PromotionController extends Controller
         $promotion = new Promotion;
         $promotion->libelle= $request->input('libelle');
         $promotion->option_id= $request->input('option');
-        $promotion->annee=$request->input('annee'); $promotion->save();
+        $promotion->annee=$request->input('annee'); 
+        $promotion->save();
         return redirect('promotions');
     }
     //modifier une ligne
     public function edit($id){
-      
+        $data = [
+
+            'options' => Option::all(),
+        
+            ];
     	$promo = Promotion::find($id);
-    	return view('admin.promotions.edit', ['promo'=>$promo]);
+    	return view('admin.promotions.edit', ['promo'=>$promo])->with($data);
     }
     public function update(Request $request, $id){
     	$promotion = Promotion::find($id);
         $promotion->libelle= $request->input('libelle');
         $promotion->option_id= $request->input('option');
-        $promotion->annee=   $request->input('annee');
+        $promotion->annee= $request->input('annee');
     	$promotion->save();
     	return redirect('promotions');    	
     }

@@ -97,8 +97,16 @@ Route::post('modules', 'App\Http\Controllers\ModuleController@store');
 Route::get('modules/{id}/edit', 'App\Http\Controllers\ModuleController@edit');
 Route::put('modules/{id}', 'App\Http\Controllers\ModuleController@update');
 Route::delete('modules/{id}', 'App\Http\Controllers\ModuleController@destroy');
+//route users
+Route::get('users', 'App\Http\Controllers\UserController@index');
+Route::get('users/create', 'App\Http\Controllers\UserController@create');
+Route::post('users', 'App\Http\Controllers\UserController@store');
+Route::get('users/{id}/edit', 'App\Http\Controllers\UserController@edit');
+Route::put('users/{id}', 'App\Http\Controllers\UserController@update');
+Route::delete('users/{id}', 'App\Http\Controllers\UserController@destroy');
+Route::get('/pie_chart', 'GoogleGraphController@index');
+use App\Http\Controllers\GooglePieController;
+Route::get('pie-chart', [GooglePieController::class, 'index']);
 ?>
-
-+
 
 

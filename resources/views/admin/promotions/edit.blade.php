@@ -3,7 +3,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
+        <title>Modifier promotion</title>
         <!-- plugins:css -->
         <link rel="stylesheet" href="../../vendors/feather/feather.css">
         <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
@@ -24,10 +24,10 @@
           <!-- partial:../../partials/_navbar.html -->
          
          
-       <div class="main-panel">
-              <div class="content-wrapper">
+       
+              
                 <div class="row">
-                 <!-- <div class="col-lg-6 grid-margin stretch-card">-->
+                 <div class="col-lg-6 grid-margin stretch-card">
                     
                       <div class="card-body">
                         <h4 class="card-title"></h4>
@@ -41,18 +41,19 @@
                             
                               
                                 <tr><td>libelle</td><td><input type="text" name="libelle" value="{{$promo->libellé}}"></td></tr>
-                                <tr><td>option</td><td>
-                                 <tr><td>
-                                  @foreach($options as $option)
-                              
-                                  <option value="{{$option->id}}" @if($promotion->option and $promotion->option->id == $option->id) selected @endif> {{$option->niveau}} </option>
-                              
-                                  @endforeach
-                              
-                              </select>
-
-                              
-                              </td></tr>
+                                <tr><td>option  </td>
+                                  <td>
+                                    <select name="option">
+                                    @foreach($options as $option)
+                                
+                                    <option value="{{$option->id}}" @if($promo->option and $promo->option->id ) selected @endif> {{$option->libelle}} </option>
+                                
+                                    @endforeach
+                                
+                                </select> 
+                              </td>
+                                </tr>
+                    
                                 <tr><td>année</td><td><input type="text" name="annee" value="{{$promo->année}}"></td></tr>
                                 
                                 

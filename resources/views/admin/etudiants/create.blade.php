@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
+  <title>Ajouter etudiant</title> 
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/feather/feather.css">
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
@@ -25,7 +25,7 @@
 </head>
 
 <body>
-<div class="main-panel">        
+    
         <div class="content-wrapper">
           <div class="row">
             <div class="col-md-6 grid-margin stretch-card">
@@ -72,20 +72,18 @@
                         </span>
                       </div>
                       </div>
+                      <div class="form-group row">
+                        <label class="col-sm-5 col-form-label">date premiere inscription</label>
+                        <div class="col-sm-7">
+                          <input name="date" class="form-control" placeholder="dd/mm/yyyy"/>
+                        </div>
                 
                     <button type="submit" class="btn btn-primary me-2">Enregistrer</button>
                     <button class="btn btn-light">Supprimer</button>
                   </form>
                 </div>
               </div>
-            </div>
-
-
-
-
-
-
-
+ 
   <!-- container-scroller -->
   <!-- plugins:js -->
   <script src="../../vendors/js/vendor.bundle.base.js"></script>

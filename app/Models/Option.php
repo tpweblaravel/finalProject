@@ -22,8 +22,8 @@ class Option extends Model
     {
         return $this->hasMany(Promotion::class);
     }
-    // public function modules()
-    // {
-    //     return $this->hasMany(Module::class);
-    // }
+     public function module()
+     {
+         return $this->hasMany(Module::class);
+     }
 }

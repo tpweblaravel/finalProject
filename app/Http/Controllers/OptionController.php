@@ -41,7 +41,6 @@ class OptionController extends Controller
     public function destroy($id){
     	$option= Option::find($id);
     	$option->delete();
-       
-    	return redirect('options');
+        return redirect('options');
     } 
 }

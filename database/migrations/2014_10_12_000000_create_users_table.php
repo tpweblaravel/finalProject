@@ -20,9 +20,9 @@ class CreateUsersTable extends Migration
             $table->date('date_naissance');
             $table->string('photo');
             $table->binary('is_admin');
-            $table->string('grade')->nullable();
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->string('grade');
+          $table->string('email')->unique();
+           $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
            // $table->foreign('mod')->unsigned();

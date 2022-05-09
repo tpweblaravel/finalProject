@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
+  <title>Ajouter module</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/feather/feather.css">
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
@@ -25,7 +25,7 @@
 </head>
 
 <body>
-<div class="main-panel">        
+       
         <div class="content-wrapper">
           <div class="row">
             <div class="col-md-6 grid-margin stretch-card">
@@ -55,6 +55,22 @@
                           <div class="col-sm-7">
                             <input name="semestre" class="form-control" placeholder="semestre1"/>
                           </div>
+                          <div class="form-group row">
+                            <label class="col-sm-5 col-form-label">examen</label>
+                            <div class="col-sm-7">
+                              <input name="examen" class="form-control" placeholder="oui/non"/>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-sm-5 col-form-label">controle</label>
+                              <div class="col-sm-7">
+                                <input name="controle" class="form-control" placeholder="oui/non"/>
+                              </div>
+                              <div class="form-group row">
+                                <label class="col-sm-5 col-form-label">tp</label>
+                                <div class="col-sm-7">
+                                  <input name="tp" class="form-control" placeholder="oui/non"/>
+                                </div>
+
                  
                     <button type="submit" class="btn btn-primary me-2">Enregistrer</button>
                     <button class="btn btn-light">Supprimer</button>
