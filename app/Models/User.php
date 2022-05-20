@@ -44,8 +44,15 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-    /*public function module()
+
+    /**
+     * The Modules that belong to the User
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function modules()
     {
-        return $this->hasMany(Module::class,'enseignant_id');
-    }*/
+        //belongsToMany(l'autre classe, la table aui lie entre les deux classes, fk de l'autre classe, fk de cette classe)
+        return $this->belongsToMany(User::class, 'users_modules', 'enseignant_id', 'module_id');
+    }
 }
