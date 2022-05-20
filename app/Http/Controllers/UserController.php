@@ -27,7 +27,7 @@ class UserController extends Controller
         $user->prenom=$request->input('prenom');
         $user->grade=$request->input('grade');
         $user->date_naissance=  $request->input('datenaissance');
-        $user->dateR=$request->input('date');
+        //$user->dateR=$request->input('date');
        
         $user->save();
         return redirect('users');
@@ -44,7 +44,7 @@ class UserController extends Controller
         $user->prenom=$request->input('prenom');
         $user->grade=$request->input('grade');
         $user->date_naissance= $request->input('datenaissance');
-        $user->dateR=$request->input('date');
+        //$user->dateR=$request->input('date');
         $user->save();
         return redirect('users');    	
     }

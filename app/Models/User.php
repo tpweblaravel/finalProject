@@ -50,9 +50,9 @@ class User extends Authenticatable
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function modules()
-    {
-        //belongsToMany(l'autre classe, la table aui lie entre les deux classes, fk de l'autre classe, fk de cette classe)
-        return $this->belongsToMany(User::class, 'users_modules', 'enseignant_id', 'module_id');
-    }
+   // public function modules()
+    //{
+        //belongsToMany(l'autre classe, la table qui lie entre les deux classes, fk de l'autre classe, fk de cette classe)
+       // return $this->belongsToMany(User::class, 'users_modules', 'enseignant_id', 'module_id');
+    //}
 }

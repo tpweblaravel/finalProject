@@ -57,25 +57,30 @@
                           </div>
                           <div class="form-group row">
                             <label class="col-sm-5 col-form-label">examen</label>
-                            <div class="col-sm-7">
-                              <input name="examen" class="form-control" placeholder="oui/non"/>
+                            <input class="form-check-input" type="checkbox" name="examen" >
                             </div>
                             <div class="form-group row">
                               <label class="col-sm-5 col-form-label">controle</label>
-                              <div class="col-sm-7">
-                                <input name="controle" class="form-control" placeholder="oui/non"/>
+                              <input class="form-check-input" type="checkbox" name="controle" >
                               </div>
                               <div class="form-group row">
                                 <label class="col-sm-5 col-form-label">tp</label>
-                                <div class="col-sm-7">
-                                  <input name="tp" class="form-control" placeholder="oui/non"/>
+                                <input class="form-check-input" type="checkbox" name="tp" >
                                 </div>
-                                <div class="form-group row">
+                                
+                                <div class="form-group">
                                   <label class="col-sm-5 col-form-label">enseignant</label>
-                                  <div class="col-sm-7">
-                                    <input name="nom" class="form-control" placeholder="nom"/>
+                                  <label for="exampleSelectGender"></label>
+                                  <select name="enseignant">
+            
+                                    @foreach($users as $user)
+                                
+                                    <option value="{{$user->id}}"> {{$user->nom}} </option>
+                                
+                                    @endforeach
+                                
+                                </select>
                                   </div>
-
                  
                     <button type="submit" class="btn btn-primary me-2">Enregistrer</button>
                     <button class="btn btn-light">Supprimer</button>

@@ -21,6 +21,7 @@ class AddModulesTable extends Migration
             $table->binary('controle');
             $table->binary('tp');
             $table->foreignId('opt_id')->constrained('options');
+            $table->foreignId('user_id')->constrained('users');
             $table->timestamps();
         });
 
