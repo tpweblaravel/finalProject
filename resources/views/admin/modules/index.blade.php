@@ -42,6 +42,7 @@
                           <th>examen</th>
                           <th>controle</th>
                           <th>tp</th>
+                          <th>enseignant</th>
                           <th> <a type="button" href="{{url('modules/create')}}" class="btn btn-outline-secondary btn-icon-text">
                           ajouter
                           <i class="ti-file btn-icon-append"></i>                          
@@ -57,6 +58,7 @@
                           <td>{{$module->controle}}</td>
                           <td>{{$module->examen}}</td>
                           <td>{{$module->tp}}</td>
+                          <td>{{$module->enseignant_id}}</td>
                            <td>
                             <form action ="{{url('modules/'.$module->id)}}" method="POST">
                                 {{ csrf_field() }}

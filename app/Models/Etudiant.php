@@ -20,7 +20,7 @@ class Etudiant extends Model
      */
     public function promotion()
     {
-        return $this->belongsTo(Promotion::class,'promo_id');
+        return $this->belongsTo(Promotion::class,'promotion_id');
     }
     /**
 

@@ -53,6 +53,7 @@
                                 <tr><td>examen</td><td><input type="text" name="examen" value="{{$mod->examen}}"></td></tr>
                                 <tr><td>controle</td><td><input type="text" name="controle" value="{{$mod->controle}}"></td></tr>
                                 <tr><td>tp</td><td><input type="text" name="tp" value="{{$mod->tp}}"></td></tr>
+                                <tr><td>enseignant</td><td><input type="text" name="nom" value="{{$mod->enseignant_id}}"></td></tr>
                            
                               
                             </tbody>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Module;
 use App\Models\Option;
+use App\Models\User;
 
 class ModuleController extends Controller
 {
@@ -33,6 +34,7 @@ class ModuleController extends Controller
         $module->controle=$request->input('controle');
         $module->examen=$request->input('examen');
         $module->tp=$request->input('tp');
+        $module->enseignant_id=$request->input('nom');
         $module->save();
         return redirect('modules');
     }
@@ -53,6 +55,7 @@ class ModuleController extends Controller
         $module->controle= $request->input('controle');
         $module->examen=  $request->input('examen');
         $module->tp=  $request->input('tp');
+        $module->enseignant_id=$request->input('nom');
         $module->save();
         return redirect('modules');   	
     }

@@ -22,7 +22,7 @@ class Promotion extends Model
     {
         return $this->belongsTo(Option::class);
     }
-     public function etudiants()
+     public function etudiant()
      {
          return $this->hasMany(Etudiant::class);
      }

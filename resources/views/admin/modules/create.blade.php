@@ -70,6 +70,11 @@
                                 <div class="col-sm-7">
                                   <input name="tp" class="form-control" placeholder="oui/non"/>
                                 </div>
+                                <div class="form-group row">
+                                  <label class="col-sm-5 col-form-label">enseignant</label>
+                                  <div class="col-sm-7">
+                                    <input name="nom" class="form-control" placeholder="nom"/>
+                                  </div>
 
                  
                     <button type="submit" class="btn btn-primary me-2">Enregistrer</button>

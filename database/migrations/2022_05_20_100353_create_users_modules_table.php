@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddColumnToEtudiants extends Migration
+class CreateUsersModulesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class AddColumnToEtudiants extends Migration
      */
     public function up()
     {
-        Schema::table('etudiants', function (Blueprint $table) {
-            $table->softDeletes();
+        Schema::create('users_modules', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('enseignant_id')->constrained('users');
+            $table->foreignId('module_id')->constrained('modules');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +28,6 @@ class AddColumnToEtudiants extends Migration
      */
     public function down()
     {
-        Schema::table('etudiants', function (Blueprint $table) {
-            $table->dropSoftDeletes();
-        });
+        Schema::dropIfExists('users_modules');
     }
 }

@@ -17,12 +17,13 @@ class AddModulesTable extends Migration
             $table->id();
             $table->string('libelle');
             $table->string('semestre');
-          //  $table->binary('examen');
-           // $table->binary('controle');
-            //$table->binary('tp');
+            $table->binary('examen');
+            $table->binary('controle');
+            $table->binary('tp');
             $table->foreignId('opt_id')->constrained('options');
             $table->timestamps();
         });
+
     }
 
     /**
