@@ -32,7 +32,7 @@
               <div class="card">
                 <div class="card-body">
                     <form action="{{ url('etudiants')}}" method="POST">
-                        {{ csrf_field()}}
+                        @csrf
                        
                     <div class="form-group">
                       <label for="exampleInputUsername1">nom</label>

@@ -31,5 +31,9 @@ class Module extends Model
          return $this->belongsToMany(Etudiant::class, 'notes');
 
      }
+     /**public function users()
+     {
+         return $this->belongsToMany(User::class,'ens_id');
+     }*/
 
 }

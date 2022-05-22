@@ -53,6 +53,17 @@
                                 <tr><td>examen</td><td><input type="text" name="examen" value="{{$mod->examen}}"></td></tr>
                                 <tr><td>controle</td><td><input type="text" name="controle" value="{{$mod->controle}}"></td></tr>
                                 <tr><td>tp</td><td><input type="text" name="tp" value="{{$mod->tp}}"></td></tr>
+                                <tr><td>enseignant</td><td> 
+                                  <select name="enseignant">
+            
+                                    @foreach($users as $user)
+                                
+                                    <option value="{{$option->id}}" @if($mod->user and $mod->user->id ) selected @endif> {{$user->nom}} </option>
+                                
+                                    @endforeach
+                                
+                                </select>
+                                </td></tr>
                            
                               
                             </tbody>

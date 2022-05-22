@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Module;
 use App\Models\Option;
+use App\Models\User;
 
 class ModuleController extends Controller
 {
@@ -27,7 +28,12 @@ class ModuleController extends Controller
             'options' => Option::all(),
         
             ];
-        return view('admin.modules.create',$data);
+            $dataa = [
+
+                'users' => User::all(),
+            
+                ];  
+        return view('admin.modules.create',$data,$dataa);
 
     }
     //enregistrer un module
@@ -39,6 +45,7 @@ class ModuleController extends Controller
         $module->controle=$request->input('controle');
         $module->examen=$request->input('examen');
         $module->tp=$request->input('tp');
+        $module->user_id=$request->input('enseignant');
         $module->save();
         return redirect('modules');
     }
@@ -49,8 +56,13 @@ class ModuleController extends Controller
             'options' => Option::all(),
         
             ];
+            $dataa = [
+
+                'users' => User::all(),
+            
+                ]; 
     	$modu = Module::find($id);
-    	return view('admin.modules.edit', ['mod'=>$modu])->with($data);
+    	return view('admin.modules.edit', ['mod'=>$modu])->with($data,$dataa);
     }
     public function update(Request $request, $id){
         $module =Module::find($id);
@@ -59,6 +71,7 @@ class ModuleController extends Controller
         $module->controle= $request->input('controle');
         $module->examen=  $request->input('examen');
         $module->tp=  $request->input('tp');
+        $module->user_id=$request->input('enseignant');
         $module->save();
         return redirect('modules');   	
     }

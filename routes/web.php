@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GooglePieController;
 
 /*
 |--------------------------------------------------------------------------
@@ -107,9 +108,8 @@ Route::post('users', 'App\Http\Controllers\UserController@store');
 Route::get('users/{id}/edit', 'App\Http\Controllers\UserController@edit');
 Route::put('users/{id}', 'App\Http\Controllers\UserController@update');
 Route::delete('users/{id}', 'App\Http\Controllers\UserController@destroy');
-Route::get('/pie_chart', 'GoogleGraphController@index');
-use App\Http\Controllers\GooglePieController;
-Route::get('pie-chart', [GooglePieController::class, 'index']);
+//Route::get('/pie_chart', 'GoogleGraphController@index');
+Route::get('/pie-chart', [GooglePieController::class, 'index']);
 ?>
 
 

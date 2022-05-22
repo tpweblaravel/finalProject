@@ -373,7 +373,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="/pie-charts">
+            <a class="nav-link" href="/pie-chart">
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">statistique</span>
             </a>

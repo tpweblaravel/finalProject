@@ -41,8 +41,8 @@ class EtudiantController extends Controller
         $etudiant->photo= $request->input('img[]');
         $etudiant->nom= $request->input('nom');
         $etudiant->prenom=$request->input('prenom');
-        $etudiant->promo_id=$request->input('promotion');
-        $etudiant->date=  $request->input('date');
+        $etudiant->promotion_id=$request->input('promotion');
+        $etudiant->date= $request->input('date');
         $etudiant->date_naissance=  $request->input('date_de_naissance');
        
         $etudiant->save();
@@ -63,7 +63,7 @@ class EtudiantController extends Controller
         $etudiant->photo= $request->input('photo');
        $etudiant->nom= $request->input('nom');
         $etudiant->prenom=$request->input('prenom');
-        $etudiant->promo_id=$request->input('promotion');
+        $etudiant->promotion_id=$request->input('promotion');
         $etudiant->date=  $request->input('date');
         $etudiant->date_naissance=  $request->input('date_de_naissance');
       

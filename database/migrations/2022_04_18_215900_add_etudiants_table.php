@@ -15,14 +15,15 @@ class AddEtudiantsTable extends Migration
     {
         Schema::create('etudiants', function (Blueprint $table) {
             $table->id();
-            $table->string('photo');
+            $table->string('photo')->nullable();
             $table->string('nom');
             $table->string('prenom');
             $table->date('date_naissance');
-            $table->foreignId('promo_id')->constrained('promotions');
+            $table->date('date')->nullable();
+            $table->foreignId('promotion_id');
             $table->timestamps();
             $table->softDeletes();
-        });
+        }); 
     }
 
     /**

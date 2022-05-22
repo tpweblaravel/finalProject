@@ -8,7 +8,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
+
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/feather/feather.css">
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
@@ -30,49 +30,29 @@
           <div class="row">
            
                 <div class="card-body">
-                  <h4 class="card-title">liste des modules</h4>
+                  <h4 class="card-title">Affectations</h4>
                   
                   <div class="table-responsive">
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>libelle</th>
-                          <th>option</th>
-                          <th>semestre</th>
-                          <th>examen</th>
-                          <th>controle</th>
-                          <th>tp</th>
+                          <th>numero</th>
+                          <th>module</th>
                           <th>enseignant</th>
-                          <th> <a type="button" href="{{url('modules/create')}}" class="btn btn-outline-secondary btn-icon-text">
+                          <th> <a type="button" href="{{url('affectations/create')}}" class="btn btn-outline-secondary btn-icon-text">
                           ajouter
                           <i class="ti-file btn-icon-append"></i>                          
                           </a></th>
                         </tr>
                       </thead>
                       <tbody>
-                        @foreach($modules as $module)
+                        @foreach($affectations as $affectation)
                         <tr>
-                          <td>{{$module->libelle}}</td>
-                          <td> {{($module->option)? $module->option->libelle : ''}}</td>
-                          <td>{{$module->semestre}}</td>
-                          <td>{{$module->controle}}</td>
-                          <td>{{$module->examen}}</td>
-                          <td>{{$module->tp}}</td>
-                          <td>{{($module->user)? $module->user->nom : ''}}</td>
-                           <td>
-                            <form action ="{{url('modules/'.$module->id)}}" method="POST">
-                                {{ csrf_field() }}
-                                {{ method_field('DELETE') }}
-                     
-                                <a type="button" href="{{url('modules/'.$module->id.'/edit')}}" class="btn btn-outline-secondary btn-icon-text">
-                                  modifier
-                                  <i class="ti-file btn-icon-append"></i>                          
-                                </a>
-                        <button type="submit" class="btn btn-inverse-primary btn-rounded btn-icon">
-                            <i class="ti-trash"></i>
-                          </button>
-                            </form>
-                      </td>
+                          <td>{{$affectation->libelle}}</td>
+                          <td> {{($affectation->option)? $module->option->libelle : ''}}</td>
+                          <td>{{$affectation->semestre}}</td>
+                        
+                        
                       </tr>
                       @endforeach
                           
