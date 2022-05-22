@@ -14,6 +14,12 @@ class ModuleController extends Controller
         return view('admin.modules.index', ['modules' => $listemodule]);
        
     }
+    public function ListeModule(){
+        $listeM= Module::all();
+        return view('enseignant.masterDP', ['listeM' => $listeM]);
+       
+    }
+
     //afficher le formulaire d'ajout d'un module
     public function create(){
         $data = [

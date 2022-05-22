@@ -90,6 +90,8 @@ Route::post('etudiants', 'App\Http\Controllers\EtudiantController@store');
 Route::get('etudiants/{id}/edit', 'App\Http\Controllers\EtudiantController@edit');
 Route::put('etudiants/{id}', 'App\Http\Controllers\EtudiantController@update');
 Route::delete('etudiants/{id}', 'App\Http\Controllers\EtudiantController@destroy');
+Route::get('/etudiants/{}','App\Http\Controllers\EtudiantController@Liste');
+Route::get('/etudiants/{}','App\Http\Controllers\EtudiantController@Liste2');
 //route modules
 Route::get('modules', 'App\Http\Controllers\ModuleController@index');
 Route::get('modules/create', 'App\Http\Controllers\ModuleController@create');
@@ -97,6 +99,7 @@ Route::post('modules', 'App\Http\Controllers\ModuleController@store');
 Route::get('modules/{id}/edit', 'App\Http\Controllers\ModuleController@edit');
 Route::put('modules/{id}', 'App\Http\Controllers\ModuleController@update');
 Route::delete('modules/{id}', 'App\Http\Controllers\ModuleController@destroy');
+Route::get('/modules/{}','App\Http\Controllers\ModuleController@ListeModule');
 //route users
 Route::get('users', 'App\Http\Controllers\UserController@index');
 Route::get('users/create', 'App\Http\Controllers\UserController@create');

@@ -14,6 +14,7 @@ class PromotionController extends Controller
         return view('admin.promotions.index', ['promotions' => $listepromo]);
        
     }
+    
     //afficher le formulaire d'ajout d'une Promo
     public function create(){
         $data = [
