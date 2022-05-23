@@ -13,16 +13,7 @@
 
   </head>
   <body>
-     
-    <div class="col-lg-6 grid-margin stretch-card">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Bar chart</h4>
-            <canvas id="chart-bars"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     <div class="card">
         <div class="card-body">
           <h4 class="card-title">etudiants par options</h4>
@@ -69,8 +60,19 @@
       }
   });
 
-
-
+          </script>
+          
+ 
+  <div class="col-lg-6 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Bar chart</h4>
+            <canvas id="chart-bars" width="400" height="400"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
           const ctx2 = ctx2.document.getElementById("chart-bars").getContext("2d");
           var nbr = <?php echo $nbr;?>;
           var nbre = <?php echo $nbre;?>;
