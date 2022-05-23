@@ -30,8 +30,7 @@
         <div class="content-wrapper">
           <div class="row">
     
-           <div class="col-lg-12 grid-margin stretch-card">
-              <div class="card">
+          
                 <div class="card-body">
                   <h4 class="card-title"></h4>
                   
@@ -50,7 +49,16 @@
                             Prénom
                           </th>
                           <th>
-                            note
+                          controle
+                          </th>
+                          <th>
+                           tp
+                          </th>
+                          <th>
+                           examen
+                          </th>
+                          <th>
+                           note finale
                           </th>
                            <th>
                             <button class="file-upload-browse btn btn-primary" type="button">Upload</button>

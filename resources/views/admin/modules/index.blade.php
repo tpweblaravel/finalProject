@@ -1,4 +1,4 @@
-@extends('layouts.master2')
+@extends('layouts.master')
 
 @section('content')
  <!DOCTYPE html>
@@ -25,54 +25,56 @@
   <link rel="shortcut icon" href="../../images/favicon.png" />
 </head>
 <body>
-
-  <div class="main-panel">
+ <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
+           
                 <div class="card-body">
-                  <h4 class="card-title"></h4>
+                  <h4 class="card-title">liste des modules</h4>
                   
-                  
-                  <div class="table-responsive pt-3">
-                    <table class="table table-bordered">
+                  <div class="table-responsive">
+                    <table class="table">
                       <thead>
                         <tr>
-                          
-                          <th>
-                            module
-                          </th>
-                          
-                          
-                         
+                          <th>libelle</th>
+                          <th>niveau</th>
+                          <th>semestre</th>
+                          <th> <a type="button" href="{{url('modules/create')}}" class="btn btn-outline-secondary btn-icon-text">
+                          ajouter
+                          <i class="ti-file btn-icon-append"></i>                          
+                          </a></th>
                         </tr>
                       </thead>
                       <tbody>
-                      @foreach($notes as $note)
+                        @foreach($modules as $module)
                         <tr>
-                         
-                          <td>
+                          <td>{{$module->libelle}}</td>
+                          <td> {{($module->option)? $module->option->libelle : ''}}</td>
+                          <td>{{$module->semestre}}</td>
+                           <td>
+                            <form action ="{{url('modules/'.$module->id)}}" method="POST">
+                                {{ csrf_field() }}
+                                {{ method_field('DELETE') }}
+                     
+                                <a type="button" href="{{url('modules/'.$module->id.'/edit')}}" class="btn btn-outline-secondary btn-icon-text">
+                                  modifier
+                                  <i class="ti-file btn-icon-append"></i>                          
+                                </a>
+                        <button type="submit" class="btn btn-inverse-primary btn-rounded btn-icon">
+                            <i class="ti-trash"></i>
+                          </button>
+                            </form>
+                      </td>
+                      </tr>
+                      @endforeach
                           
-                          </td>
-                          
-                          <td>
-                            <a type="button"  href="{{url('notes/'.$note->id/show)}}"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
-                          </td>
-                        </tr>
-                        
+                       
                       </tbody>
                     </table>
                   </div>
                 </div>
               </div>
             </div>
-            </div>
-              </div>
-            </div>
-            </div>
-            
-            
   <script src="../../vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
@@ -86,5 +88,4 @@
   <script src="../../js/todolist.js"></script>
   </body>
   </html>
-
 @endsection

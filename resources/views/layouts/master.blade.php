@@ -8,6 +8,7 @@
   <title>gestion de scolarité</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/feather/feather.css">
+ 
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
   <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
@@ -379,17 +380,12 @@
           </li>
           <li class="nav-item nav-category"></li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" href="/utilisateur">
               <i class="menu-icon mdi mdi-floor-plan"></i>
               <span class="menu-title">utilisateur</span>
               <i class="menu-arrow"></i> 
             </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">enseignants</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/dropdowns.html">admin</a></li>
-              </ul>
-            </div>
+            
           </li>
           <li class="nav-item nav-category"></li>
           <li class="nav-item">

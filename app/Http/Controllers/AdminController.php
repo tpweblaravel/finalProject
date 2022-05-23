@@ -17,4 +17,10 @@ class AdminController extends Controller
         $listEtudiant = Etudiant::all();
         return view('promotion', ['etu' => $listEtudiant]);
     }
+
+    public function show($id)
+    {
+       
+        return view('Enseignant', ['id' => $id]);
+    }
 }

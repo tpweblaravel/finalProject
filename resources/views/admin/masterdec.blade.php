@@ -25,53 +25,84 @@
   <link rel="shortcut icon" href="../../images/favicon.png" />
 </head>
 <body>
-
-  <div class="main-panel">
+ 
+    <!-- partial:../../partials/_navbar.html -->
+   
+ <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
+            
                 <div class="card-body">
                   <h4 class="card-title"></h4>
-                  
-                  
-                  <div class="table-responsive pt-3">
-                    <table class="table table-bordered">
+                
+  
+                  <div class="table-responsive">
+                    <table class="table">
                       <thead>
                         <tr>
-                          
-                          <th>
-                            module
-                          </th>
-                          
-                          
-                         
+                          <th>Enseignants</th>
+                          <th>Modules</th>
                         </tr>
                       </thead>
                       <tbody>
-                      @foreach($notes as $note)
                         <tr>
-                         
-                          <td>
-                          
-                          </td>
-                          
-                          <td>
-                            <a type="button"  href="{{url('notes/'.$note->id/show)}}"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
-                          </td>
+                          <td>Enseignant 1</td>
+                          <td>Module 1</td>
                         </tr>
-                        
+                        <tr>
+                          <td>Enseignant 2</td>
+                          <td>Module 2</td>
+                          
+                        </tr>
+                        <tr>
+                          <td>Enseignant 3</td>
+                          <td>Module 3</td>
+                        </tr>
+                        <tr>
+                          <td>Enseignant 4</td>
+                          <td>Module 4</td>
+                        </tr>
+                        <tr>
+                          <td>Enseignant 5</td>
+                          <td>Module 5</td>
+                        </tr>
+                        <tr>
+                          <td>Enseignant 6</td>
+                          <td>Module 6</td>
+                          
+                        </tr>
+                        <tr>
+                          <td>Enseignant 7</td>
+                          <td>Module 7</td>
+                          
+                        </tr>
+                        <tr>
+                          <td>Enseignant 8</td>
+                          <td>Module 8</td>
+                          
+                        </tr>
+                        <tr>
+                          <td>Enseignant 9</td>
+                          <td>Module 9</td>
+                          
+                        </tr>
+                        <tr>
+                          <td>Enseignant 10</td>
+                          <td>Module 10</td>
+                          
+                          
+                        </tr>
+                        <tr>
+                          <td>Enseignant 11</td>
+                          <td>Module 11</td>
+                        </tr>
+
                       </tbody>
                     </table>
                   </div>
                 </div>
               </div>
             </div>
-            </div>
-              </div>
-            </div>
-            </div>
-            
             
   <script src="../../vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
@@ -86,5 +117,4 @@
   <script src="../../js/todolist.js"></script>
   </body>
   </html>
-
 @endsection

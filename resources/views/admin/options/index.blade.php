@@ -1,4 +1,4 @@
-@extends('layouts.master2')
+@extends('layouts.master')
 
 @section('content')
  <!DOCTYPE html>
@@ -25,41 +25,54 @@
   <link rel="shortcut icon" href="../../images/favicon.png" />
 </head>
 <body>
-
-  <div class="main-panel">
+ 
+    <!-- partial:../../partials/_navbar.html -->
+   
+ <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
+            <!--<div class="col-lg-8 grid-margin stretch-card">-->
+              
                 <div class="card-body">
                   <h4 class="card-title"></h4>
-                  
-                  
-                  <div class="table-responsive pt-3">
-                    <table class="table table-bordered">
+                
+  
+                  <div class="table-responsive">
+                    <table class="table">
                       <thead>
                         <tr>
-                          
-                          <th>
-                            module
-                          </th>
-                          
-                          
-                         
+                          <th>libelle</th>
+                          <th>niveau</th>
+                          <th> <a type="button" href="{{url('options/create')}}" class="btn btn-outline-secondary btn-icon-text">
+                          ajouter
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </a></th>
                         </tr>
                       </thead>
                       <tbody>
-                      @foreach($notes as $note)
+                        @foreach($options as $option)
                         <tr>
+                          <td> {{$option->libelle}}</td>
+                          <td> {{$option->niveau}}</td>
                          
-                          <td>
-                          
-                          </td>
-                          
-                          <td>
-                            <a type="button"  href="{{url('notes/'.$note->id/show)}}"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
-                          </td>
+            
+                      <td>
+                        <form action ="{{url('options/'.$option->id)}}" method="post">
+                            {{csrf_field()}}
+                            {{method_field('DELETE')}}
+                
+                     
+                        <a type="button" href="{{url('options/'.$option->id.'/edit')}}" class="btn btn-outline-secondary btn-icon-text">
+                          modifier
+                          <i class="ti-file btn-icon-append"></i>                          
+                        </a>
+                        <button type=" submi" class="btn btn-inverse-primary btn-rounded btn-icon">
+                            <i class="ti-trash"></i>
+                          </button>
+                        </form>
+                      </td>
                         </tr>
+                        @endforeach
                         
                       </tbody>
                     </table>
@@ -67,11 +80,6 @@
                 </div>
               </div>
             </div>
-            </div>
-              </div>
-            </div>
-            </div>
-            
             
   <script src="../../vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
@@ -86,5 +94,4 @@
   <script src="../../js/todolist.js"></script>
   </body>
   </html>
-
 @endsection

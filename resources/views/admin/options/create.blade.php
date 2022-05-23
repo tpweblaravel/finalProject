@@ -1,7 +1,4 @@
-@extends('layouts.master2')
-
-@section('content')
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,64 +15,52 @@
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
   <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="../../vendors/select2/select2.min.css">
+  <link rel="stylesheet" href="../../vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
 </head>
-<body>
 
-  <div class="main-panel">
+<body>
+<div class="main-panel">        
         <div class="content-wrapper">
           <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title"></h4>
-                  
-                  
-                  <div class="table-responsive pt-3">
-                    <table class="table table-bordered">
-                      <thead>
-                        <tr>
-                          
-                          <th>
-                            module
-                          </th>
-                          
-                          
-                         
-                        </tr>
-                      </thead>
-                      <tbody>
-                      @foreach($notes as $note)
-                        <tr>
-                         
-                          <td>
-                          
-                          </td>
-                          
-                          <td>
-                            <a type="button"  href="{{url('notes/'.$note->id/show)}}"class="btn btn-inverse-primary btn-rounded btn-icon">
-                        <i class="ti-eye"></i>
-                      </a>
-                          </td>
-                        </tr>
-                        
-                      </tbody>
-                    </table>
-                  </div>
+                    <form action="{{ url('options')}}" method="POST">
+                        {{ csrf_field()}}
+                    <div class="form-group">
+                      <label for="exampleInputUsername1">libelle</label>
+                      <input type="text" name="libel" class="form-control" id="exampleInputUsername1" placeholder="premiere">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelectGender">niveau</label>
+                        <input type="text" name="niveauu" class="form-control" id="exampleInputUsername1" placeholder="master/licence">
+                    </div>
+                    <button type="submit" class="btn btn-primary me-2">Enregistrer</button>
+                    <button class="btn btn-light">Supprimer</button>
+                  </form>
                 </div>
               </div>
             </div>
-            </div>
-              </div>
-            </div>
-            </div>
-            
-            
+
+
+
+
+
+
+
+  <!-- container-scroller -->
+  <!-- plugins:js -->
   <script src="../../vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
+  <script src="../../vendors/typeahead.js/typeahead.bundle.min.js"></script>
+  <script src="../../vendors/select2/select2.min.js"></script>
   <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
   <!-- End plugin js for this page -->
   <!-- inject:js -->
@@ -84,7 +69,12 @@
   <script src="../../js/template.js"></script>
   <script src="../../js/settings.js"></script>
   <script src="../../js/todolist.js"></script>
-  </body>
-  </html>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../js/file-upload.js"></script>
+  <script src="../../js/typeahead.js"></script>
+  <script src="../../js/select2.js"></script>
+  <!-- End custom js for this page-->
+</body>
 
-@endsection
+</html>

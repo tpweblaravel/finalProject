@@ -4,13 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Etudiant extends Model
+class Note extends Model
 {
     use HasFactory;
     use SoftDeletes;
-   protected $table = 'etudiants';
+   protected $table = 'notes';
     protected $primaryKey = 'id';
     //protected $dates= ['deleted_at'];
      /**
@@ -18,9 +17,9 @@ class Etudiant extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function promotion()
+    public function note()
     {
-        return $this->belongsTo(Promotion::class,'promo_id');
+        return $this->HasMany(note::class,'etudiant_id');
     }
     /**
 
@@ -36,8 +35,7 @@ class Etudiant extends Model
 
     {
 
-        return $this->belongsToMany(Module::class, 'notes');
+        return $this->belongsToMany(Module::class, 'module_id');
 
     }
-
 }
