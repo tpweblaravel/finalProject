@@ -20,6 +20,7 @@ class ModifyColumnsToUsers extends Migration
             $table->date('date_naissance')->after('prenom');
             $table->string('photo')->after('date_naissance');
             $table->string('grade')->after('photo');
+            $table->string('dater')->after('grade');
         });
     }
 

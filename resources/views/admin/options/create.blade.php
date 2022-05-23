@@ -39,7 +39,16 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleSelectGender">niveau</label>
-                        <input type="text" name="niveauu" class="form-control" id="exampleInputUsername1" placeholder="master/licence">
+                        <select class="form-control" id="exampleSelectGender" name="niveauu" required>
+
+                          <option value="niveauu"></option>                                
+
+                          <option value="licence">licence</option>
+
+                          <option value="master">master</option>
+
+                  </select>
+                        
                     </div>
                     <button type="submit" class="btn btn-primary me-2">Enregistrer</button>
                     <button class="btn btn-light">Supprimer</button>

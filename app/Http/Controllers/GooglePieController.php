@@ -19,33 +19,43 @@ class GooglePieController extends Controller
      */
     public function index()
     {
-      
-
-       /*$count = array_values(Etudiant::all()->countBy( function ($item){
-            return $item['promotion_id'];
-        })->toArray());
-
-        $optionss = Option::all()
-        ->map(function ($option) {
-            return $option->libelle;
-        });
-        //dd(Etudiant::all());
-        return view('statistique/piechart')
-        ->with('optionss',json_encode($optionss, JSON_NUMERIC_CHECK))
-        ->with('count',json_encode($count, JSON_NUMERIC_CHECK));*/
+       $option=Option::all();
+       $count=[];
+       $libelle=[];
+       foreach($option as $opt){
+       $count[]= Etudiant::join('promotions', 'promotions.id', '=', 'etudiants.promotion_id')
+        ->where('option_id',$opt->id)->count();
+        $libelle[]=$opt->libelle
+        ;} 
        
-    
-    $number = array_values(Etudiant::all()->countBy( function ($item){
-        return $item['date'];
-    })->toAarray());
 
-    $year =array_values(User::all()->countBy( function ($ite){
-        return $ite['dateR'];
-    })->toAarray()); 
-    dd(Etudiant::all());
-    return view('statistique/piechart')
-    ->with('year',json_encode($year, JSON_NUMERIC_CHECK))
-    ->with('number',json_encode($number, JSON_NUMERIC_CHECK));
+   
+      $currentYear = date("Y");
+
+   $year=[ $currentYear => $currentYear,
+
+    ($currentYear - 1) => $currentYear - 1,
+    ($currentYear - 2) => $currentYear - 2,
+    ($currentYear - 3) => $currentYear - 3,
+    ($currentYear - 4) => $currentYear - 4,
+
+    ];
+        $nbr=[];
+        $nbre=[];
+
+        foreach($year as $y){
+            $nbr[]=Etudiant::where(DB::raw("DATE_FORMAT(date, '%Y')"),$y)->count();
+            $nbre[]=User::where(DB::raw("DATE_FORMAT(dater, '%Y')"),$y)->count()
+        ;} 
+
+        return view('statistique/piechart')
+        ->with('optionss',json_encode($libelle, JSON_NUMERIC_CHECK))
+        ->with('count',json_encode($count, JSON_NUMERIC_CHECK))
+        ->with('nbr',json_encode($nbr, JSON_NUMERIC_CHECK))
+        ->with('year',json_encode($year, JSON_NUMERIC_CHECK))
+        ->with('nbre',json_encode($nbre, JSON_NUMERIC_CHECK));
+   
+   
  
 }
 }

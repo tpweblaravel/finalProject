@@ -45,7 +45,7 @@
                      <div class="form-group row">
                           <label class="col-sm-5 col-form-label">Date de naissance</label>
                           <div class="col-sm-7">
-                            <input name="date_de_naissance" class="form-control" placeholder="dd/mm/yyyy"/>
+                            <input name="date_de_naissance" type="date" class="form-control" placeholder="dd/mm/yyyy"/>
                           </div>
 
                      <div class="form-group">
