@@ -8,7 +8,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
+ 
   <!-- plugins:css -->
   <!--{{ asset('') }}-->
   <link rel="stylesheet" href="../../vendors/feather/feather.css">
@@ -44,6 +44,9 @@
                             photo
                           </th>
                           <th>
+                            première inscription
+                          </th>
+                          <th>
                             Nom
                           </th>
                           <th>
@@ -68,6 +71,7 @@
                         @foreach($etudiants as $etudiant)
                         <tr>
                           <td>{{$etudiant->photo}}</td>
+                          <td>{{$etudiant->date}}</td>
                           <td>{{$etudiant->nom}}</td>
                           <td>{{$etudiant->prenom}}</td>
                           <td>{{($etudiant->promotion)? $etudiant->promotion->libelle : ''}}</td>

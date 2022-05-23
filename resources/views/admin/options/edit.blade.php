@@ -3,7 +3,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
+        <title> modifier option</title>
         <!-- plugins:css -->
         <link rel="stylesheet" href="../../vendors/feather/feather.css">
         <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
@@ -24,8 +24,6 @@
           <!-- partial:../../partials/_navbar.html -->
          
          
-       <div class="main-panel">
-              <div class="content-wrapper">
                 <div class="row">
                  <!-- <div class="col-lg-6 grid-margin stretch-card">-->
                     
@@ -42,6 +40,7 @@
                               
                                 <tr><td>libelle</td><td><input type="text" name="libelle" value="{{$opt->libelle}}"></td></tr>
                                 <tr><td>niveau</td><td><input type="text" name="niveau" value="{{$opt->niveau}}"></td></tr>
+                                
                                 
                                 
                                 

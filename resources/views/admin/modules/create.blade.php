@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
+  <title>Ajouter module</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/feather/feather.css">
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
@@ -25,7 +25,7 @@
 </head>
 
 <body>
-<div class="main-panel">        
+       
         <div class="content-wrapper">
           <div class="row">
             <div class="col-md-6 grid-margin stretch-card">
@@ -55,6 +55,32 @@
                           <div class="col-sm-7">
                             <input name="semestre" class="form-control" placeholder="semestre1"/>
                           </div>
+                          <div class="form-group row">
+                            <label class="col-sm-5 col-form-label">examen</label>
+                            <input class="form-check-input" type="checkbox" name="examen" >
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-sm-5 col-form-label">controle</label>
+                              <input class="form-check-input" type="checkbox" name="controle" >
+                              </div>
+                              <div class="form-group row">
+                                <label class="col-sm-5 col-form-label">tp</label>
+                                <input class="form-check-input" type="checkbox" name="tp" >
+                                </div>
+                                
+                                <div class="form-group">
+                                  <label class="col-sm-5 col-form-label">enseignant</label>
+                                  <label for="exampleSelectGender"></label>
+                                  <select name="enseignant">
+            
+                                    @foreach($users as $user)
+                                
+                                    <option value="{{$user->id}}"> {{$user->nom}} </option>
+                                
+                                    @endforeach
+                                
+                                </select>
+                                  </div>
                  
                     <button type="submit" class="btn btn-primary me-2">Enregistrer</button>
                     <button class="btn btn-light">Supprimer</button>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GooglePieController;
 
 /*
 |--------------------------------------------------------------------------
@@ -99,6 +100,7 @@ Route::put('modules/{id}', 'App\Http\Controllers\ModuleController@update');
 Route::delete('modules/{id}', 'App\Http\Controllers\ModuleController@destroy');
 
 
+
 //route notes
 Route::get('notes', 'App\Http\Controllers\EnseignantController@index');
 Route::get('notes/create', 'App\Http\Controllers\EnseignantController@create');
@@ -110,13 +112,22 @@ Route::put('notes/{id}/show', 'App\Http\Controllers\EnseignantController@show');
 
 
 //route modules
-Route::get('modules', 'App\Http\Controllers\modulesController@index');
-Route::get('modules/create', 'App\Http\Controllers\modulesController@create');
-Route::post('modules', 'App\Http\Controllers\modulesController@store');
-Route::put('modules/{id}/show', 'App\Http\Controllers\modulesController@show');
+Route::get('module', 'App\Http\Controllers\modulesController@index');
+Route::get('module/create', 'App\Http\Controllers\modulesController@create');
+Route::post('module', 'App\Http\Controllers\modulesController@store');
+Route::put('module/{id}/show', 'App\Http\Controllers\modulesController@show');
 
-?>
 
-+
+//route users
+Route::get('users', 'App\Http\Controllers\UserController@index');
+Route::get('users/create', 'App\Http\Controllers\UserController@create');
+Route::post('users', 'App\Http\Controllers\UserController@store');
+Route::get('users/{id}/edit', 'App\Http\Controllers\UserController@edit');
+Route::put('users/{id}', 'App\Http\Controllers\UserController@update');
+Route::delete('users/{id}', 'App\Http\Controllers\UserController@destroy');
+//Route::get('/pie_chart', 'GoogleGraphController@index');
+Route::get('/pie-chart', [GooglePieController::class, 'index']);
+
+?> 
 
 

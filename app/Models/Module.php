@@ -12,7 +12,7 @@ class Module extends Model
     protected $primaryKey = 'id';
      public function option()
      {
-         return $this->belongsTo(Option::class);
+         return $this->belongsTo(Option::class,'opt_id');
      }
      /**
 
@@ -31,5 +31,9 @@ class Module extends Model
          return $this->belongsToMany(Etudiant::class, 'notes');
 
      }
+     /**public function users()
+     {
+         return $this->belongsToMany(User::class,'ens_id');
+     }*/
 
 }

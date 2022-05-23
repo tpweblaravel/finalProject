@@ -3,7 +3,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
+        <title>Modifier etudiant</title>
         <!-- plugins:css -->
         <link rel="stylesheet" href="../../vendors/feather/feather.css">
         <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
@@ -24,14 +24,14 @@
           <!-- partial:../../partials/_navbar.html -->
          
          
-       <div class="main-panel">
-              <div class="content-wrapper">
+       
+              
                 <div class="row">
-                 <!-- <div class="col-lg-6 grid-margin stretch-card">-->
+                 <!--<div class="col-lg-6 grid-margin stretch-card">-->
                     
                       <div class="card-body">
                         <h4 class="card-title"></h4>
-                        <form action= "{{url('etudiants/'. $etu->id_etud)}}" method="POST">
+                        <form action= "{{url('etudiants/'. $etu->id)}}" method="POST">
                             <input type="hidden" name="_method" value="PUT">
                             {{ csrf_field()}}
                         <div class="table-responsive">
@@ -40,18 +40,26 @@
                             <tbody>
                             
                               
-                                <tr><td>photo</td><td><input type="text" name="photo" value="{{$etu->photos}}"></td></tr>
+                                <tr><td>photo</td><td><input type="text" name="photo" value="{{$etu->photo}}"></td></tr>
                                 <tr><td>nom</td><td><input type="text" name="nom" value="{{$etu->nom}}"></td></tr>
                                 <tr><td>prénom</td><td><input type="text" name="prenom" value="{{$etu->prenom}}"></td></tr>
-                                <tr><td>date de naissance</td><td><input type="text" name="date_de_naissance" value="{{$etu->date}}"></td></tr>
+                                <tr><td>promotion</td><td>
+                                  <select name="promotion">
+                                  @foreach($promotions as $promotion)
+                              
+                                  <option value="{{$promotion->id}}" @if($etu->promotion and $etu->promotion->id ) selected @endif> {{$promotion->libelle}} </option>
+                              
+                                  @endforeach
+                              
+                              </select>
+
+                              
+                              </td></tr>
+                            
+                                <tr><td>date de naissance</td><td><input type="text" name="date_de_naissance" value="{{$etu->date_naissance}}"></td></tr>
+                                <tr><td>date 1er inscription</td><td><input type="text" name="date" value="{{$etu->date}}"></td></tr>
   
-                                
-                                
-                    
-                                
-                                
-                                
-                     
+                          
                               </tr>
                             </tbody>
                           </table>
@@ -59,8 +67,7 @@
                          </form>
                         </div>
                       </div>
-                    </div>
-                  </div>
+                 
                   
         <script src="../../vendors/js/vendor.bundle.base.js"></script>
         <!-- endinject -->

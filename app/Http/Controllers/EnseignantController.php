@@ -56,8 +56,6 @@ class EnseignantController extends Controller
         return redirect('notes');   	
     }
 
-    public function edit($id){
-        return view()
-    }
+   
    
 }

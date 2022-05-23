@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
+  <title>Ajouter un utilisateur</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/feather/feather.css">
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
@@ -25,13 +25,13 @@
 </head>
 
 <body>
-<div class="main-panel">        
+      
         <div class="content-wrapper">
           <div class="row">
             <div class="col-md-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                    <form action="{{ url('etudiants')}}" method="POST">
+                    <form action="{{ url('users')}}" method="POST">
                         {{ csrf_field()}}
                        
                     <div class="form-group">
@@ -45,9 +45,14 @@
                      <div class="form-group row">
                           <label class="col-sm-5 col-form-label">Date de naissance</label>
                           <div class="col-sm-7">
-                            <input name="date_de_naissance" class="form-control" placeholder="dd/mm/yyyy"/>
+                            <input name="datenaissance" class="form-control" placeholder="dd/mm/yyyy"/>
                           </div>
                        
+                          <!--<div class="form-group row">
+                            <label class="col-sm-5 col-form-label">Date de recrutement</label>
+                            <div class="col-sm-7">
+                              <input name="date" class="form-control" placeholder="dd/mm/yyyy"/>
+                            </div>-->
                           <div class="form-group">
                             <label for="exampleInputUsername1">grade</label>
                             <input type="text" name="grade" class="form-control" id="exampleInputUsername1" placeholder="maitre assistant A">
