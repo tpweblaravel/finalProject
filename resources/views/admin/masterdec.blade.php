@@ -96,7 +96,6 @@
                           <td>Enseignant 11</td>
                           <td>Module 11</td>
                         </tr>
-
                       </tbody>
                     </table>
                   </div>
