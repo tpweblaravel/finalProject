@@ -26,7 +26,7 @@ class ModuleController extends Controller
 
                 'users' => User::all(),
             
-                ];  
+            ];
         return view('admin.modules.create',$data,$dataa);
 
     }
@@ -45,18 +45,17 @@ class ModuleController extends Controller
     }
     //modifier une ligne
     public function edit($id){
-        $data = [
+       
 
-            'options' => Option::all(),
+            $data = Option::all();
         
-            ];
-            $dataa = [
+           
 
-                'users' => User::all(),
+             $dataa = User::all();
             
-                ]; 
+                
     	$modu = Module::find($id);
-    	return view('admin.modules.edit', ['mod'=>$modu])->with($data,$dataa);
+    	return view('admin.modules.edit', ['mod'=>$modu,'options'=>$data,'users'=>$dataa]);
     }
     public function update(Request $request, $id){
         $module =Module::find($id);
@@ -64,7 +63,7 @@ class ModuleController extends Controller
         $module->semestre= $request->input('semestre');
         $module->controle= $request->input('controle');
         $module->examen=  $request->input('examen');
-        $module->tp=  $request->input('tp');
+        $module->tp=$request->input('tp');
         $module->user_id=$request->input('enseignant');
         $module->save();
         return redirect('modules');   	

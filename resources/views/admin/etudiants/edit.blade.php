@@ -56,8 +56,8 @@
                               
                               </td></tr>
                             
-                                <tr><td>date de naissance</td><td><input type="text" name="date_de_naissance" value="{{$etu->date_naissance}}"></td></tr>
-                                <tr><td>date 1er inscription</td><td><input type="text" name="date" value="{{$etu->date}}"></td></tr>
+                                <tr><td>date de naissance</td><td><input type="date" name="date_de_naissance" value="{{$etu->date_naissance}}"></td></tr>
+                                <tr><td>date 1er inscription</td><td><input type="date" name="date" value="{{$etu->date}}"></td></tr>
   
                           
                               </tr>

@@ -43,8 +43,9 @@
                                 <tr><td>nom</td><td><input type="text" name="nom" value="{{$user->nom}}"></td></tr>
                                 <tr><td>prénom</td><td><input type="text" name="prenom" value="{{$user->prenom}}"></td></tr>
                                 <tr><td>grade</td><td><input type="text" name="grade" value="{{$user->grade}}"></td></tr>
-                                <tr><td>date de naissance</td><td><input type="text" name="datenaissance" value="{{$user->date_naissance}}"></td></tr>
-                                <tr><td>date de recrutement</td><td><input type="text" name="date" value="{{$user->dateR}}"></td></tr>
+                                <tr><td>admin</td><td> <input class="form-check-input" type="checkbox" name="admin" ></td></tr>
+                                <tr><td>date de naissance</td><td><input type="date" name="datenaissance" value="{{$user->date_naissance}}"></td></tr>
+                                <tr><td>date de recrutement</td><td><input type="date" name="date" value="{{$user->dater}}"></td></tr>
                                
                               </tr>
                             </tbody>

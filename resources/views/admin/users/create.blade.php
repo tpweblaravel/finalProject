@@ -45,18 +45,22 @@
                      <div class="form-group row">
                           <label class="col-sm-5 col-form-label">Date de naissance</label>
                           <div class="col-sm-7">
-                            <input name="datenaissance" class="form-control" placeholder="dd/mm/yyyy"/>
+                            <input name="datenaissance" type="date" class="form-control" placeholder="dd/mm/yyyy"/>
                           </div>
                        
-                          <!--<div class="form-group row">
+                          <div class="form-group row">
                             <label class="col-sm-5 col-form-label">Date de recrutement</label>
                             <div class="col-sm-7">
-                              <input name="date" class="form-control" placeholder="dd/mm/yyyy"/>
-                            </div>-->
+                              <input name="dateR" type="date" class="form-control" placeholder="dd/mm/yyyy"/>
+                            </div>
                           <div class="form-group">
                             <label for="exampleInputUsername1">grade</label>
                             <input type="text" name="grade" class="form-control" id="exampleInputUsername1" placeholder="maitre assistant A">
                           </div>
+                          <div class="form-group row">
+                            <label class="col-sm-5 col-form-label">admin</label>
+                            <input class="form-check-input" type="checkbox" name="admin" >
+                            </div>
                  
                       <div class="form-group">
                         <label>photo</label>
