@@ -214,6 +214,16 @@
                       </a>
                           </td>
                         </tr>
+                        <h1>liste des etudiants de la promo </h1>
+
+<ul>
+   @foreach($listeE2 as $listeE2)
+	<li>
+	    <h3>{{ $listeE2->nom }}</h3>
+	    <hr>
+	</li>
+   @endforeach
+</ul>
                       </tbody>
                     </table>
                   </div>

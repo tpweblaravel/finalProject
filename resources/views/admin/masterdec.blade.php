@@ -96,6 +96,15 @@
                           <td>Enseignant 11</td>
                           <td>Module 11</td>
                         </tr>
+                        <h1>liste des etudiants de la promo </h1>
+
+<ul>
+   @foreach($listeM as $listeM)
+	<li>
+	    <h3>{{ $listeM->libelle }}</h3>
+	    <hr>
+	</li>
+   @endforeach
                       </tbody>
                     </table>
                   </div>

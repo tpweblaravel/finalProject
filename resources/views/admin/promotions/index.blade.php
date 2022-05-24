@@ -78,7 +78,16 @@
                       </td>
                         </tr>
                         @endforeach
-                        
+                        <h1>liste des etudiants de la promo </h1>
+
+<ul>
+   @foreach($listE as $listeE)
+	<li>
+	    <h3>{{ $listeE->nom }}</h3>
+	    <hr>
+	</li>
+   @endforeach
+</ul>
                       
 
                       </tbody>

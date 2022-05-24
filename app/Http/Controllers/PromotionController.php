@@ -58,8 +58,7 @@ class PromotionController extends Controller
         
     	return redirect('promotions');
     } 
-
-   
+    
 
 
 }

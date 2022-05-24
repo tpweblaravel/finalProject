@@ -75,4 +75,15 @@ class EtudiantController extends Controller
     	$etudiant->delete();
     	return redirect('etudiants');
     } 
+    public function Liste2(Request $request, $id){
+        $listeE2= Etudiant::find($id);
+        return view('enseignant.masterDP', ['listeE2' => $listeE2]);
+       
+    }
+    public function Liste(Request $request, $id){
+        $listeE= Etudiant::find($id);
+        return view('admin.promotions.index', ['listeE' => $listeE]);
+       
+    }
+
 }

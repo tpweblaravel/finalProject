@@ -41,9 +41,11 @@
                           <th>
                             module
                           </th>
-                          <th>
-                            Note
-                          </th>
+                          @foreach($modules as $module)
+                          <tr>
+                            ({$module->libelle})
+                          </tr>
+                          @endforeach
                           
                          
                         </tr>
