@@ -31,9 +31,11 @@ class Module extends Model
          return $this->belongsToMany(Etudiant::class, 'notes');
 
      }
-     /**public function users()
+     public function users()
      {
-         return $this->belongsToMany(User::class,'ens_id');
-     }*/
+         return $this->belongsToMany(User::class,'modules');
+     }
+
+     
 
 }

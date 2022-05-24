@@ -11,13 +11,16 @@ class modulesController extends Controller
     //lister les modules
     public function index(){
         $data = DB::table('modules')
-        ->join('users', 'modules.users_id', '=', 'users.id')
-        ->select('modules.libelle','modules.users_id')
-        ->where('users.id', '=', 'modules.users_id')
-        ->groupBy('users_id')
+        ->join('users', 'modules.user_id', '=', 'users.id')
+        ->select('modules.libelle','modules.user_id')
+        ->where('users.id', '=', 'modules.user_id')
+        ->groupBy('user_id')
         ->get();
+        
+        return view('enseignant.notes.modules.index', ['module' => $data]);
+      
 
-        return view('enseigner.module.index', ['module' => $data]);
+        
        
     }
   

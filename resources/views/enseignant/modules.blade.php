@@ -38,23 +38,21 @@
                       <thead>
                         <tr>
                           
-                          <th>
+                          <h1>
                             module
-                          </th>
+                          </h1>
                           
                           
                          
                         </tr>
                       </thead>
                       <tbody>
-                      @foreach($notes as $note)
+                      @foreach($modules as $module)
                         <tr>
-                         
-                          <td>
+                          ({$module->libelle})
+                        </tr>
+                        @endforeach
                           
-                          </td>
-                          
-                          <td>
                             <a type="button"  href="{{url('notes/'.$note->id/show)}}"class="btn btn-inverse-primary btn-rounded btn-icon">
                         <i class="ti-eye"></i>
                       </a>

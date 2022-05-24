@@ -27,7 +27,7 @@ class EnseignantController extends Controller
             'notes' => notes::all(),
         
             ];
-        return view('admin.notes.create',$data);
+        return view('enseigant.notes.create',$data);
 
     }
     //enregistrer une note
@@ -44,7 +44,7 @@ class EnseignantController extends Controller
     //modifier une ligne
     public function edit($id){
     	$NOTE = Note::find($id);
-    	return view('admin.notes.edit', ['mod'=>$NOTE]);
+    	return view('enseigant.notes.edit', ['mod'=>$NOTE]);
     }
     public function update(Request $request, $id){
         $Notes =Note::find($id);
