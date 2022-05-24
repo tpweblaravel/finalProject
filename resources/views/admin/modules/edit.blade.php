@@ -40,7 +40,7 @@
                             <tbody>
                             
                                 <tr><td>libelle</td><td><input type="text" name="libelle" value="{{$mod->libelle}}"></td></tr>
-                                <tr><td>option</td><td> 
+                              <tr><td>option</td><td> 
                                   <select name="option">
                                   @foreach($options as $option)
                               
@@ -50,15 +50,15 @@
                               
                               </select> </td></tr>
                                 <tr><td>semestre</td><td><input type="text" name="semestre" value="{{$mod->semestre}}"></td></tr>
-                                <tr><td>examen</td><td><input type="text" name="examen" value="{{$mod->examen}}"></td></tr>
-                                <tr><td>controle</td><td><input type="text" name="controle" value="{{$mod->controle}}"></td></tr>
-                                <tr><td>tp</td><td><input type="text" name="tp" value="{{$mod->tp}}"></td></tr>
+                                <tr><td>examen</td><td> <input class="form-check-input" type="checkbox" name="examen" ></td></tr>
+                                <tr><td>controle</td><td> <input class="form-check-input" type="checkbox" name="controle" ></td></tr>
+                                <tr><td>tp</td><td> <input class="form-check-input" type="checkbox" name="tp" ></td></tr>
                                 <tr><td>enseignant</td><td> 
                                   <select name="enseignant">
             
                                     @foreach($users as $user)
                                 
-                                    <option value="{{$option->id}}" @if($mod->user and $mod->user->id ) selected @endif> {{$user->nom}} </option>
+                                    <option value="{{$user->id}}" @if($mod->user and $mod->user->id ) selected @endif> {{$user->nom}} </option>
                                 
                                     @endforeach
                                 

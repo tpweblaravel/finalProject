@@ -39,7 +39,16 @@
                             
                               
                                 <tr><td>libelle</td><td><input type="text" name="libelle" value="{{$opt->libelle}}"></td></tr>
-                                <tr><td>niveau</td><td><input type="text" name="niveau" value="{{$opt->niveau}}"></td></tr>
+                                <tr><td>niveau</td><td>  
+                                  <select name="niveauu" >
+                                  <option value="niveauu"></option>                                
+        
+                                  <option value="licence">licence</option>
+
+                          <option value="master">master</option>
+        
+                          </select>
+                                </td></tr>
                                 
                                 
                                 

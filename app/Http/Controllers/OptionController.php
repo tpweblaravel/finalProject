@@ -34,7 +34,7 @@ class OptionController extends Controller
     public function update(Request $request, $id){
     	$option = Option::find($id);
     	$option->libelle = $request->input('libelle');
-        $option->niveau=  $request->input('niveau');
+        $option->niveau=  $request->input('niveauu');
     	$option->save();
     	return redirect('options');    	
     }

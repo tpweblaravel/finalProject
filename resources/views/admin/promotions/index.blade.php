@@ -8,7 +8,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
+ 
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/feather/feather.css">
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
@@ -39,7 +39,7 @@
                 
   
                   <div class="table-responsive">
-                    <table class="table">
+                     <table class="table">
                       <thead>
                         <tr>
                           <th>libelle</th>
@@ -78,11 +78,21 @@
                       </td>
                         </tr>
                         @endforeach
-                        
+                        <h1>liste des etudiants de la promo </h1>
+
+<ul>
+   @foreach($listE as $listeE)
+	<li>
+	    <h3>{{ $listeE->nom }}</h3>
+	    <hr>
+	</li>
+   @endforeach
+</ul>
                       
 
                       </tbody>
                     </table>
+                    
                   </div>
                 </div>
               </div>

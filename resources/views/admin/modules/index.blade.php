@@ -8,7 +8,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
+  
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/feather/feather.css">
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
@@ -53,7 +53,7 @@
                         @foreach($modules as $module)
                         <tr>
                           <td>{{$module->libelle}}</td>
-                          <td> {{($module->option)? $module->option->libelle : ''}}</td>
+                          <td>{{($module->option)? $module->option->libelle : ''}}</td>
                           <td>{{$module->semestre}}</td>
                           <td>{{$module->controle}}</td>
                           <td>{{$module->examen}}</td>

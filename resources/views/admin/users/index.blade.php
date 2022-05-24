@@ -8,7 +8,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
+
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/feather/feather.css">
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
@@ -55,6 +55,9 @@
                             grade
                           </th>
                           <th>
+                            admin
+                           </th>
+                          <th>
                            Date de naissance
                           </th>
                          
@@ -71,10 +74,11 @@
                           @foreach ( $users as $user )
                         <tr>
                           <td>{{$user->photo}}</td>
-                          <td>{{$user->dateR}}</td>
+                          <td>{{$user->dater}}</td>
                           <td>{{$user->nom}}</td>
                           <td>{{$user->prenom}}</td>
                           <td>{{$user->grade}}</td>
+                          <td>{{$user->admin}}</td>
                           <td>{{$user->date_naissance}}</td>
                           <td>
                             <form action ="{{url('users/'.$user->id)}}" method="POST">

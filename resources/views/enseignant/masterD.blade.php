@@ -29,6 +29,7 @@
   <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
+<<<<<<< HEAD
     
           
                 <div class="card-body">
@@ -210,33 +211,215 @@
                           Edit
                           <i class="ti-file btn-icon-append"></i>                          
                         </button>
+=======
+              
+            <div class="card-body">
+              <h4 class="card-title"></h4>
+              
+              
+              <div class="table-responsive pt-3">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>
+                        #
+                      </th>
+                      <th>
+                        Nom
+                      </th>
+                      <th>
+                        Prénom
+                      </th>
+                      <th>
+                      controle
+                      </th>
+                      <th>
+                       tp
+                      </th>
+                      <th>
+                       examen
+                      </th>
+                      <th>
+                       note finale
+                      </th>
+                       <th>
+                        <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        1
+                      </td>
+                      <td>
+                      
+                      </td>
+                      <td>
+>>>>>>> 2309daef0dc60cd4c0700986cd38f7e42277fbc1
                         
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
+                      </td>
+                      <td>
+                        
+                      </td>
+                     
+                      <td>
+                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                      Edit
+                      <i class="ti-file btn-icon-append"></i>                          
+                    </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        2
+                      </td>
+                      <td>
+                        
+                      </td>
+                      <td>
+                        
+                      </td>
+                      <td>
+                        
+                      </td>
+                      
+                      <td>
+                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                      Edit
+                      <i class="ti-file btn-icon-append"></i>                          
+                    </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        3
+                      </td>
+                      <td>
+                       
+                      </td>
+                      <td>
+                        
+                      </td>
+                      <td>
+                        
+                      </td>
+                     
+                      <td>
+                       <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                      Edit
+                      <i class="ti-file btn-icon-append"></i>                          
+                    </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        4
+                      </td>
+                      <td>
+                        
+                      </td>
+                      <td>
+                       
+                      </td>
+                    <td>
+                       
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                      Edit
+                      <i class="ti-file btn-icon-append"></i>                          
+                    </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        5
+                      </td>
+                      <td>
+                        
+                      </td>
+                      <td>
+                        
+                      </td>
+                      <td>
+                        
+                      </td>
+                     
+                      <td>
+                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                      Edit
+                      <i class="ti-file btn-icon-append"></i>                          
+                    </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        6
+                      </td>
+                      <td>
+                        
+                      </td>
+                      <td>
+                        
+                      </td>
+                      <td>
+                        
+                      </td>
+                     
+                      <td>
+                       <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                      Edit
+                      <i class="ti-file btn-icon-append"></i>                          
+                    </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        7
+                      </td>
+                      <td>
+                        
+                      </td>
+                      <td>
+                        
+                      </td>
+                      <td>
+                        
+                      </td>
+                     
+                      <td>
+                      <button type="button" class="btn btn-outline-secondary btn-icon-text">
+                      Edit
+                      <i class="ti-file btn-icon-append"></i>                          
+                    </button>
+                    
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-            </div>
-              </div>
-            </div>
-            </div>
-            
-            
-  <script src="../../vendors/js/vendor.bundle.base.js"></script>
-  <!-- endinject -->
-  <!-- Plugin js for this page -->
-  <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-  <!-- End plugin js for this page -->
-  <!-- inject:js -->
-  <script src="../../js/off-canvas.js"></script>
-  <script src="../../js/hoverable-collapse.js"></script>
-  <script src="../../js/template.js"></script>
-  <script src="../../js/settings.js"></script>
-  <script src="../../js/todolist.js"></script>
-  </body>
-  </html>
+          </div>
+        </div>
+        </div>
+          </div>
+        </div>
+        </div>
+        
+        
+<script src="../../vendors/js/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page -->
+<script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+<!-- End plugin js for this page -->
+<!-- inject:js -->
+<script src="../../js/off-canvas.js"></script>
+<script src="../../js/hoverable-collapse.js"></script>
+<script src="../../js/template.js"></script>
+<script src="../../js/settings.js"></script>
+<script src="../../js/todolist.js"></script>
+</body>
+</html>
 
 @endsection

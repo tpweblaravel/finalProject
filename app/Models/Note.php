@@ -17,7 +17,11 @@ class Note extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
+<<<<<<< HEAD
     public function note()
+=======
+    public function notes()
+>>>>>>> 2309daef0dc60cd4c0700986cd38f7e42277fbc1
     {
         return $this->HasMany(note::class,'etudiant_id');
     }

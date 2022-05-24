@@ -15,6 +15,16 @@ class EtudiantController extends Controller
         return view('admin.etudiants.index', ['etudiants' => $listeetudiant]);
        
     }
+    public function Liste(){
+        $listeE= Etudiant::all();
+        return view('admin.promotions.index', ['listeE' => $listeE]);
+       
+    }
+    public function Liste2(){
+        $listeE2= Etudiant::all();
+        return view('enseignant.masterDP', ['listeE2' => $listeE2]);
+       
+    }
     //afficher le formulaire d'ajout d'un etudiant 
     public function create(){
         $data = [
@@ -65,4 +75,15 @@ class EtudiantController extends Controller
     	$etudiant->delete();
     	return redirect('etudiants');
     } 
+    public function Liste2(Request $request, $id){
+        $listeE2= Etudiant::find($id);
+        return view('enseignant.masterDP', ['listeE2' => $listeE2]);
+       
+    }
+    public function Liste(Request $request, $id){
+        $listeE= Etudiant::find($id);
+        return view('admin.promotions.index', ['listeE' => $listeE]);
+       
+    }
+
 }

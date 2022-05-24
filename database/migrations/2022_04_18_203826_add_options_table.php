@@ -16,7 +16,7 @@ class AddOptionsTable extends Migration
         Schema::create('options', function (Blueprint $table) {
             $table->id();
             $table->string('libelle');
-            $table->string('niveau');
+            $table->enum('niveau',  ['licence','master']);
             $table->timestamps();
             $table->softDeletes();
         });

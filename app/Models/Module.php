@@ -31,11 +31,18 @@ class Module extends Model
          return $this->belongsToMany(Etudiant::class, 'notes');
 
      }
+<<<<<<< HEAD
      public function users()
      {
          return $this->belongsToMany(User::class,'modules');
      }
 
      
+=======
+     public function user()
+     {
+         return $this->belongsTo(User::class,'user_id');
+     }
+>>>>>>> 2309daef0dc60cd4c0700986cd38f7e42277fbc1
 
 }

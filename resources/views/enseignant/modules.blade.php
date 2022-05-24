@@ -40,8 +40,17 @@
                           
                           <h1>
                             module
+<<<<<<< HEAD
                           </h1>
                           
+=======
+                          </th>
+                          @foreach($modules as $module)
+                          <tr>
+                            ({$module->libelle})
+                          </tr>
+                          @endforeach
+>>>>>>> 2309daef0dc60cd4c0700986cd38f7e42277fbc1
                           
                          
                         </tr>
